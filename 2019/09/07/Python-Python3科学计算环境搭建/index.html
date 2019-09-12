@@ -19,7 +19,7 @@
 <meta property="og:site_name" content="Simple Technique">
 <meta property="og:description" content="Python3科学计算环境搭建12sudo apt-get install python3-pip    #安装pip   sudo pip3 install --upgrade pip    #更新pip  1234567sudo pip3 install numpy    #数据处理   sudo pip3 install scipy    #科学计算   sudo pip3 install">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-09-10T02:31:48.000Z">
+<meta property="og:updated_time" content="2019-09-12T02:38:21.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python3科学计算环境搭建">
 <meta name="twitter:description" content="Python3科学计算环境搭建12sudo apt-get install python3-pip    #安装pip   sudo pip3 install --upgrade pip    #更新pip  1234567sudo pip3 install numpy    #数据处理   sudo pip3 install scipy    #科学计算   sudo pip3 install">
@@ -106,16 +106,16 @@
 
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">sudo pip3 install numpy    #数据处理   </span><br><span class="line">sudo pip3 install scipy    #科学计算   </span><br><span class="line">sudo pip3 install pandas    #数据分析   </span><br><span class="line">sudo pip3 install matplotlib    #画图   </span><br><span class="line">sudo pip3 install seaborn    #美化matplotlib图表   </span><br><span class="line">sudo pip3 install ipython    #python shell   </span><br><span class="line">sudo pip3 install jupyter    #python note</span><br></pre></td></tr></table></figure>
 
-<p><code>sudo apt-get install Spyder    #科学计算IDE</code></p>
-<h1 id="pip使用说明"><a href="#pip使用说明" class="headerlink" title="pip使用说明"></a>pip使用说明</h1><p><code>pip3 help    #显示帮助</code><br><code>pip3 search &lt;包名&gt;    #查找需要安装的包</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install Spyder    #科学计算IDE`</span><br></pre></td></tr></table></figure>
+
+<h1 id="pip使用说明"><a href="#pip使用说明" class="headerlink" title="pip使用说明"></a>pip使用说明</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pip3 help    #显示帮助`   </span><br><span class="line">pip3 search &lt;包名&gt;    #查找需要安装的包`</span><br></pre></td></tr></table></figure>
+
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo pip3 install &lt;包名&gt;    #安装包   </span><br><span class="line">sudo pip3 install &lt;包名&gt;==1.0.4   </span><br><span class="line">sudo pip3 install &lt;包名&gt; -i http://pypi.mirrors.ustc.edu.cn/simple/</span><br></pre></td></tr></table></figure>
 
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pip3 list    #列出已经安装的包   </span><br><span class="line">pip3 list  -o   #列出过期的包</span><br></pre></td></tr></table></figure>
 
-<p><code>sudo pip3 install &lt;包名&gt; -U    #升级包</code></p>
-<p><code>pip3 show &lt;包名&gt;    #显示包信息</code></p>
-<p><code>pip3 check &lt;包名&gt;    #检查包依赖</code></p>
-<p><code>sudo pip3 uninstall &lt;包名&gt;    #卸载包</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">sudo pip3 install &lt;包名&gt; -U    #升级包`</span><br><span class="line"></span><br><span class="line">pip3 show &lt;包名&gt;    #显示包信息`</span><br><span class="line"></span><br><span class="line">pip3 check &lt;包名&gt;    #检查包依赖`</span><br><span class="line"></span><br><span class="line">sudo pip3 uninstall &lt;包名&gt;    #卸载包`</span><br></pre></td></tr></table></figure>
+
 <h2 id="在配置文件中指定pip安装源（没有配置文件可以手动添加一个）"><a href="#在配置文件中指定pip安装源（没有配置文件可以手动添加一个）" class="headerlink" title="在配置文件中指定pip安装源（没有配置文件可以手动添加一个）"></a>在配置文件中指定pip安装源（没有配置文件可以手动添加一个）</h2><p>/etc/pip.conf </p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[global] </span><br><span class="line">timeout = 6000 </span><br><span class="line">index-url = http://pypi.douban.com/simple</span><br></pre></td></tr></table></figure>
 
@@ -155,10 +155,10 @@
 <nav class="article-nav clearfix">
  
  <div class="prev" >
- <a href="/2019/09/08/Linux-Hexo使用说明/" title="Hexo使用说明">
+ <a href="/2019/09/07/Windows-常用命令/" title="Windows常用命令">
   <strong>上一篇：</strong><br/>
   <span>
-  Hexo使用说明</span>
+  Windows常用命令</span>
 </a>
 </div>
 
@@ -192,11 +192,31 @@
 		<ul>
 		
 		  
-			<li><a href="/categories/Linux/" title="Linux">Linux<sup>1</sup></a></li>
+			<li><a href="/categories/ABAQUS/" title="ABAQUS">ABAQUS<sup>2</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/Fortran/" title="Fortran">Fortran<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/Linux/" title="Linux">Linux<sup>4</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/MATLAB/" title="MATLAB">MATLAB<sup>2</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/Other/" title="Other">Other<sup>2</sup></a></li>
 		  
 		
 		  
 			<li><a href="/categories/Python/" title="Python">Python<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/Windows/" title="Windows">Windows<sup>1</sup></a></li>
 		  
 		
 		</ul>
@@ -209,7 +229,27 @@
 		<ul class="clearfix">
 		
 			
-				<li><a href="/tags/Linux/" title="Linux">Linux<sup>1</sup></a></li>
+				<li><a href="/tags/Linux/" title="Linux">Linux<sup>4</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/ABAQUS/" title="ABAQUS">ABAQUS<sup>2</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Other/" title="Other">Other<sup>2</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/MATLAB/" title="MATLAB">MATLAB<sup>2</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Fortran/" title="Fortran">Fortran<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Windows/" title="Windows">Windows<sup>1</sup></a></li>
 			
 		
 			
