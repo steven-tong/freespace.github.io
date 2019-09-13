@@ -268,36 +268,6 @@ vim ~/.vimrc.bundles
   </entry>
   
   <entry>
-    <title>日常设置</title>
-    <link href="https://steven-tong.github.io/2019/09/07/other-ri-chang-she-zhi/"/>
-    <id>https://steven-tong.github.io/2019/09/07/other-ri-chang-she-zhi/</id>
-    <published>2019-09-07T11:38:05.000Z</published>
-    <updated>2019-09-12T02:38:21.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;护眼颜色设置&quot;&gt;&lt;a href=&quot;#护眼颜色设置&quot; class=&quot;headerlink&quot; title=&quot;护眼颜色设置&quot;&gt;&lt;/a&gt;护眼颜色设置&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Page&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;RGB:
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Other" scheme="https://steven-tong.github.io/categories/Other/"/>
-    
-    
-      <category term="Other" scheme="https://steven-tong.github.io/tags/Other/"/>
-    
-  </entry>
-  
-  <entry>
     <title>MATLAB并行计算设置</title>
     <link href="https://steven-tong.github.io/2019/09/07/matlab-bing-xing-ji-suan-she-zhi/"/>
     <id>https://steven-tong.github.io/2019/09/07/matlab-bing-xing-ji-suan-she-zhi/</id>
@@ -328,9 +298,9 @@ vim ~/.vimrc.bundles
   </entry>
   
   <entry>
-    <title>Windows常用命令</title>
-    <link href="https://steven-tong.github.io/2019/09/07/windows-chang-yong-ming-ling/"/>
-    <id>https://steven-tong.github.io/2019/09/07/windows-chang-yong-ming-ling/</id>
+    <title>日常设置</title>
+    <link href="https://steven-tong.github.io/2019/09/07/other-ri-chang-she-zhi/"/>
+    <id>https://steven-tong.github.io/2019/09/07/other-ri-chang-she-zhi/</id>
     <published>2019-09-07T11:38:05.000Z</published>
     <updated>2019-09-12T02:38:21.000Z</updated>
     
@@ -340,18 +310,20 @@ vim ~/.vimrc.bundles
       
         
         
-          &lt;h1 id=&quot;合并文件&quot;&gt;&lt;a href=&quot;#合并文件&quot; class=&quot;headerlink&quot; title=&quot;合并文件&quot;&gt;&lt;/a&gt;合并文件&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;shift+rightclick, choose ‘open command window here’ 
+          &lt;h1 id=&quot;护眼颜色设置&quot;&gt;&lt;a href=&quot;#护眼颜色设置&quot; class=&quot;headerlink&quot; title=&quot;护眼颜色设置&quot;&gt;&lt;/a&gt;护眼颜色设置&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Page&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;RGB:
         
       
     
     </summary>
     
     
-      <category term="Windows" scheme="https://steven-tong.github.io/categories/Windows/"/>
+      <category term="Other" scheme="https://steven-tong.github.io/categories/Other/"/>
     
     
-      <category term="Windows" scheme="https://steven-tong.github.io/tags/Windows/"/>
+      <category term="Other" scheme="https://steven-tong.github.io/tags/Other/"/>
     
   </entry>
   
@@ -379,6 +351,34 @@ vim ~/.vimrc.bundles
     
     
       <category term="Python" scheme="https://steven-tong.github.io/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Windows常用命令</title>
+    <link href="https://steven-tong.github.io/2019/09/07/windows-chang-yong-ming-ling/"/>
+    <id>https://steven-tong.github.io/2019/09/07/windows-chang-yong-ming-ling/</id>
+    <published>2019-09-07T11:38:05.000Z</published>
+    <updated>2019-09-12T02:38:21.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;合并文件&quot;&gt;&lt;a href=&quot;#合并文件&quot; class=&quot;headerlink&quot; title=&quot;合并文件&quot;&gt;&lt;/a&gt;合并文件&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;shift+rightclick, choose ‘open command window here’ 
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Windows" scheme="https://steven-tong.github.io/categories/Windows/"/>
+    
+    
+      <category term="Windows" scheme="https://steven-tong.github.io/tags/Windows/"/>
     
   </entry>
   

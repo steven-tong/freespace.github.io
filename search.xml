@@ -229,31 +229,6 @@
     
     
     <entry>
-      <title>日常设置</title>
-      <link href="/2019/09/07/other-ri-chang-she-zhi/"/>
-      <url>/2019/09/07/other-ri-chang-she-zhi/</url>
-      
-        <content type="html"><![CDATA[<h1 id="护眼颜色设置"><a href="#护眼颜色设置" class="headerlink" title="护眼颜色设置"></a>护眼颜色设置</h1><ul><li><p>Page</p><blockquote><p>RGB: 40-44-52<br>颜色码: 282C34</p></blockquote></li><li><p>Word</p><blockquote><p>RGB: 171-178-191<br>颜色码: ABB2BF</p></blockquote></li></ul>]]></content>
-      
-      
-      <categories>
-          
-          <category> Other </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Other </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>MATLAB并行计算设置</title>
       <link href="/2019/09/07/matlab-bing-xing-ji-suan-she-zhi/"/>
       <url>/2019/09/07/matlab-bing-xing-ji-suan-she-zhi/</url>
@@ -279,23 +254,23 @@
     
     
     <entry>
-      <title>Windows常用命令</title>
-      <link href="/2019/09/07/windows-chang-yong-ming-ling/"/>
-      <url>/2019/09/07/windows-chang-yong-ming-ling/</url>
+      <title>日常设置</title>
+      <link href="/2019/09/07/other-ri-chang-she-zhi/"/>
+      <url>/2019/09/07/other-ri-chang-she-zhi/</url>
       
-        <content type="html"><![CDATA[<h1 id="合并文件"><a href="#合并文件" class="headerlink" title="合并文件"></a>合并文件</h1><ul><li><p>shift+rightclick, choose ‘open command window here’    </p></li><li><p>Copying the command below    </p><p>  <code>for %f in (*.txt) do type &quot;%f&quot; &gt;&gt; output.txt</code></p></li></ul>]]></content>
+        <content type="html"><![CDATA[<h1 id="护眼颜色设置"><a href="#护眼颜色设置" class="headerlink" title="护眼颜色设置"></a>护眼颜色设置</h1><ul><li><p>Page</p><blockquote><p>RGB: 40-44-52<br>颜色码: 282C34</p></blockquote></li><li><p>Word</p><blockquote><p>RGB: 171-178-191<br>颜色码: ABB2BF</p></blockquote></li></ul>]]></content>
       
       
       <categories>
           
-          <category> Windows </category>
+          <category> Other </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Windows </tag>
+            <tag> Other </tag>
             
         </tags>
       
@@ -321,6 +296,31 @@
         <tags>
             
             <tag> Python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Windows常用命令</title>
+      <link href="/2019/09/07/windows-chang-yong-ming-ling/"/>
+      <url>/2019/09/07/windows-chang-yong-ming-ling/</url>
+      
+        <content type="html"><![CDATA[<h1 id="合并文件"><a href="#合并文件" class="headerlink" title="合并文件"></a>合并文件</h1><ul><li><p>shift+rightclick, choose ‘open command window here’    </p></li><li><p>Copying the command below    </p><p>  <code>for %f in (*.txt) do type &quot;%f&quot; &gt;&gt; output.txt</code></p></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> Windows </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Windows </tag>
             
         </tags>
       
