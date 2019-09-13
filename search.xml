@@ -229,31 +229,6 @@
     
     
     <entry>
-      <title>MATLAB并行计算设置</title>
-      <link href="/2019/09/07/matlab-bing-xing-ji-suan-she-zhi/"/>
-      <url>/2019/09/07/matlab-bing-xing-ji-suan-she-zhi/</url>
-      
-        <content type="html"><![CDATA[<ul><li><p>Go to ‘home-environment-parallel-parallel preferences’ to set the default cluster    </p></li><li><p>Go to ‘home-environment-parallel-manage cluster profiles’, choose the default cluster and click ‘edit’ to change the number of workers    </p><blockquote><p>this is the maximum workers that you can use    </p></blockquote></li><li><p>In your program file, at the begining (before virable statement), write the command below to assign the number of workers (num1) that you want to use (less than the number in cluster file).    </p><p>  <code>parpool (num1)</code>    </p></li><li><p>Use the command below to assign which part of the programe you want to do parallel computing. In this command, you divide your program into ‘num2’ parts and each part will be assigned one worker to compute. If num2 is bigger than num1, for example 5 times, it’s ok because the computer will do the computing 5 times.</p><pre><code>  parfor i=1:num2  (part of the programe that you want to do parallel computing)  End</code></pre></li><li><p>If in ‘home-environment-parallel-parallel preferences’, ‘automatically create parallel pool’ is ticked, matlab will automatically using parallel computing without step 3) but step 3) will overwrite this option.    </p></li><li><p>Every time you change the numbers of workers in step 3), remember to restart to parallel pool (at the left buttom of the window).</p></li></ul>]]></content>
-      
-      
-      <categories>
-          
-          <category> MATLAB </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> MATLAB </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>日常设置</title>
       <link href="/2019/09/07/other-ri-chang-she-zhi/"/>
       <url>/2019/09/07/other-ri-chang-she-zhi/</url>
@@ -279,23 +254,23 @@
     
     
     <entry>
-      <title>Python3科学计算环境搭建</title>
-      <link href="/2019/09/07/python-python3-ke-xue-ji-suan-huan-jing-da-jian/"/>
-      <url>/2019/09/07/python-python3-ke-xue-ji-suan-huan-jing-da-jian/</url>
+      <title>MATLAB并行计算设置</title>
+      <link href="/2019/09/07/matlab-bing-xing-ji-suan-she-zhi/"/>
+      <url>/2019/09/07/matlab-bing-xing-ji-suan-she-zhi/</url>
       
-        <content type="html"><![CDATA[<h1 id="Python3科学计算环境搭建"><a href="#Python3科学计算环境搭建" class="headerlink" title="Python3科学计算环境搭建"></a>Python3科学计算环境搭建</h1><pre><code>sudo apt-get install python3-pip    #安装pip   sudo pip3 install --upgrade pip    #更新pip</code></pre><pre><code>sudo pip3 install numpy    #数据处理   sudo pip3 install scipy    #科学计算   sudo pip3 install pandas    #数据分析   sudo pip3 install matplotlib    #画图   sudo pip3 install seaborn    #美化matplotlib图表   sudo pip3 install ipython    #python shell   sudo pip3 install jupyter    #python note</code></pre><pre><code>sudo apt-get install Spyder    #科学计算IDE`</code></pre><h1 id="pip使用说明"><a href="#pip使用说明" class="headerlink" title="pip使用说明"></a>pip使用说明</h1><pre><code>pip3 help    #显示帮助`   pip3 search &lt;包名&gt;    #查找需要安装的包`</code></pre><pre><code>sudo pip3 install &lt;包名&gt;    #安装包   sudo pip3 install &lt;包名&gt;==1.0.4   sudo pip3 install &lt;包名&gt; -i http://pypi.mirrors.ustc.edu.cn/simple/ </code></pre><pre><code>pip3 list    #列出已经安装的包   pip3 list  -o   #列出过期的包</code></pre><pre><code>sudo pip3 install &lt;包名&gt; -U    #升级包`pip3 show &lt;包名&gt;    #显示包信息`pip3 check &lt;包名&gt;    #检查包依赖`sudo pip3 uninstall &lt;包名&gt;    #卸载包`</code></pre><h2 id="在配置文件中指定pip安装源（没有配置文件可以手动添加一个）"><a href="#在配置文件中指定pip安装源（没有配置文件可以手动添加一个）" class="headerlink" title="在配置文件中指定pip安装源（没有配置文件可以手动添加一个）"></a>在配置文件中指定pip安装源（没有配置文件可以手动添加一个）</h2><p>/etc/pip.conf </p><pre><code>[global] timeout = 6000 index-url = http://pypi.douban.com/simple</code></pre>]]></content>
+        <content type="html"><![CDATA[<ul><li><p>Go to ‘home-environment-parallel-parallel preferences’ to set the default cluster    </p></li><li><p>Go to ‘home-environment-parallel-manage cluster profiles’, choose the default cluster and click ‘edit’ to change the number of workers    </p><blockquote><p>this is the maximum workers that you can use    </p></blockquote></li><li><p>In your program file, at the begining (before virable statement), write the command below to assign the number of workers (num1) that you want to use (less than the number in cluster file).    </p><p>  <code>parpool (num1)</code>    </p></li><li><p>Use the command below to assign which part of the programe you want to do parallel computing. In this command, you divide your program into ‘num2’ parts and each part will be assigned one worker to compute. If num2 is bigger than num1, for example 5 times, it’s ok because the computer will do the computing 5 times.</p><pre><code>  parfor i=1:num2  (part of the programe that you want to do parallel computing)  End</code></pre></li><li><p>If in ‘home-environment-parallel-parallel preferences’, ‘automatically create parallel pool’ is ticked, matlab will automatically using parallel computing without step 3) but step 3) will overwrite this option.    </p></li><li><p>Every time you change the numbers of workers in step 3), remember to restart to parallel pool (at the left buttom of the window).</p></li></ul>]]></content>
       
       
       <categories>
           
-          <category> Python </category>
+          <category> MATLAB </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Python </tag>
+            <tag> MATLAB </tag>
             
         </tags>
       
@@ -321,6 +296,31 @@
         <tags>
             
             <tag> Windows </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Python3科学计算环境搭建</title>
+      <link href="/2019/09/07/python-python3-ke-xue-ji-suan-huan-jing-da-jian/"/>
+      <url>/2019/09/07/python-python3-ke-xue-ji-suan-huan-jing-da-jian/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Python3科学计算环境搭建"><a href="#Python3科学计算环境搭建" class="headerlink" title="Python3科学计算环境搭建"></a>Python3科学计算环境搭建</h1><pre><code>sudo apt-get install python3-pip    #安装pip   sudo pip3 install --upgrade pip    #更新pip</code></pre><pre><code>sudo pip3 install numpy    #数据处理   sudo pip3 install scipy    #科学计算   sudo pip3 install pandas    #数据分析   sudo pip3 install matplotlib    #画图   sudo pip3 install seaborn    #美化matplotlib图表   sudo pip3 install ipython    #python shell   sudo pip3 install jupyter    #python note</code></pre><pre><code>sudo apt-get install Spyder    #科学计算IDE`</code></pre><h1 id="pip使用说明"><a href="#pip使用说明" class="headerlink" title="pip使用说明"></a>pip使用说明</h1><pre><code>pip3 help    #显示帮助`   pip3 search &lt;包名&gt;    #查找需要安装的包`</code></pre><pre><code>sudo pip3 install &lt;包名&gt;    #安装包   sudo pip3 install &lt;包名&gt;==1.0.4   sudo pip3 install &lt;包名&gt; -i http://pypi.mirrors.ustc.edu.cn/simple/ </code></pre><pre><code>pip3 list    #列出已经安装的包   pip3 list  -o   #列出过期的包</code></pre><pre><code>sudo pip3 install &lt;包名&gt; -U    #升级包`pip3 show &lt;包名&gt;    #显示包信息`pip3 check &lt;包名&gt;    #检查包依赖`sudo pip3 uninstall &lt;包名&gt;    #卸载包`</code></pre><h2 id="在配置文件中指定pip安装源（没有配置文件可以手动添加一个）"><a href="#在配置文件中指定pip安装源（没有配置文件可以手动添加一个）" class="headerlink" title="在配置文件中指定pip安装源（没有配置文件可以手动添加一个）"></a>在配置文件中指定pip安装源（没有配置文件可以手动添加一个）</h2><p>/etc/pip.conf </p><pre><code>[global] timeout = 6000 index-url = http://pypi.douban.com/simple</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> Python </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Python </tag>
             
         </tags>
       

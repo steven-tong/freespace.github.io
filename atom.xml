@@ -268,36 +268,6 @@ vim ~/.vimrc.bundles
   </entry>
   
   <entry>
-    <title>MATLAB并行计算设置</title>
-    <link href="https://steven-tong.github.io/2019/09/07/matlab-bing-xing-ji-suan-she-zhi/"/>
-    <id>https://steven-tong.github.io/2019/09/07/matlab-bing-xing-ji-suan-she-zhi/</id>
-    <published>2019-09-07T11:38:05.000Z</published>
-    <updated>2019-09-12T02:38:21.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Go to ‘home-environment-parallel-parallel preferences’ to set the default cluster    &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Go to
-        
-      
-    
-    </summary>
-    
-    
-      <category term="MATLAB" scheme="https://steven-tong.github.io/categories/MATLAB/"/>
-    
-    
-      <category term="MATLAB" scheme="https://steven-tong.github.io/tags/MATLAB/"/>
-    
-  </entry>
-  
-  <entry>
     <title>日常设置</title>
     <link href="https://steven-tong.github.io/2019/09/07/other-ri-chang-she-zhi/"/>
     <id>https://steven-tong.github.io/2019/09/07/other-ri-chang-she-zhi/</id>
@@ -328,9 +298,9 @@ vim ~/.vimrc.bundles
   </entry>
   
   <entry>
-    <title>Python3科学计算环境搭建</title>
-    <link href="https://steven-tong.github.io/2019/09/07/python-python3-ke-xue-ji-suan-huan-jing-da-jian/"/>
-    <id>https://steven-tong.github.io/2019/09/07/python-python3-ke-xue-ji-suan-huan-jing-da-jian/</id>
+    <title>MATLAB并行计算设置</title>
+    <link href="https://steven-tong.github.io/2019/09/07/matlab-bing-xing-ji-suan-she-zhi/"/>
+    <id>https://steven-tong.github.io/2019/09/07/matlab-bing-xing-ji-suan-she-zhi/</id>
     <published>2019-09-07T11:38:05.000Z</published>
     <updated>2019-09-12T02:38:21.000Z</updated>
     
@@ -340,17 +310,20 @@ vim ~/.vimrc.bundles
       
         
         
-          &lt;h1 id=&quot;Python3科学计算环境搭建&quot;&gt;&lt;a href=&quot;#Python3科学计算环境搭建&quot; class=&quot;headerlink&quot; title=&quot;Python3科学计算环境搭建&quot;&gt;&lt;/a&gt;Python3科学计算环境搭建&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;sudo
+          &lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Go to ‘home-environment-parallel-parallel preferences’ to set the default cluster    &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Go to
         
       
     
     </summary>
     
     
-      <category term="Python" scheme="https://steven-tong.github.io/categories/Python/"/>
+      <category term="MATLAB" scheme="https://steven-tong.github.io/categories/MATLAB/"/>
     
     
-      <category term="Python" scheme="https://steven-tong.github.io/tags/Python/"/>
+      <category term="MATLAB" scheme="https://steven-tong.github.io/tags/MATLAB/"/>
     
   </entry>
   
@@ -379,6 +352,33 @@ vim ~/.vimrc.bundles
     
     
       <category term="Windows" scheme="https://steven-tong.github.io/tags/Windows/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python3科学计算环境搭建</title>
+    <link href="https://steven-tong.github.io/2019/09/07/python-python3-ke-xue-ji-suan-huan-jing-da-jian/"/>
+    <id>https://steven-tong.github.io/2019/09/07/python-python3-ke-xue-ji-suan-huan-jing-da-jian/</id>
+    <published>2019-09-07T11:38:05.000Z</published>
+    <updated>2019-09-12T02:38:21.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Python3科学计算环境搭建&quot;&gt;&lt;a href=&quot;#Python3科学计算环境搭建&quot; class=&quot;headerlink&quot; title=&quot;Python3科学计算环境搭建&quot;&gt;&lt;/a&gt;Python3科学计算环境搭建&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;sudo
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Python" scheme="https://steven-tong.github.io/categories/Python/"/>
+    
+    
+      <category term="Python" scheme="https://steven-tong.github.io/tags/Python/"/>
     
   </entry>
   
