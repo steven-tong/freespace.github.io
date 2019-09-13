@@ -129,31 +129,6 @@
     
     
     <entry>
-      <title>Git使用说明</title>
-      <link href="/2019/09/07/linux-git-shi-yong-shuo-ming/"/>
-      <url>/2019/09/07/linux-git-shi-yong-shuo-ming/</url>
-      
-        <content type="html"><![CDATA[<h1 id="链接github"><a href="#链接github" class="headerlink" title="链接github"></a>链接github</h1><pre><code>git config --global user.name &quot;GitHub 用户名&quot;     ！设置用户名git config --global user.email &quot;GitHub 邮箱&quot;      ！设置邮箱ssh-keygen -t rsa -C &quot;youremail@example.com&quot;     ！生成SSH key&gt; 添加SSH public key到github网站ssh -T git@github.com      !检查是否链接成功</code></pre>]]></content>
-      
-      
-      <categories>
-          
-          <category> Linux </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Linux </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Windows安装gcc，gfortran</title>
       <link href="/2019/09/07/fortran-windows-an-zhuang-gcc-gfortran/"/>
       <url>/2019/09/07/fortran-windows-an-zhuang-gcc-gfortran/</url>
@@ -171,6 +146,31 @@
         <tags>
             
             <tag> Fortran </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Git使用说明</title>
+      <link href="/2019/09/07/linux-git-shi-yong-shuo-ming/"/>
+      <url>/2019/09/07/linux-git-shi-yong-shuo-ming/</url>
+      
+        <content type="html"><![CDATA[<h1 id="链接github"><a href="#链接github" class="headerlink" title="链接github"></a>链接github</h1><pre><code>git config --global user.name &quot;GitHub 用户名&quot;     ！设置用户名git config --global user.email &quot;GitHub 邮箱&quot;      ！设置邮箱ssh-keygen -t rsa -C &quot;youremail@example.com&quot;     ！生成SSH key&gt; 添加SSH public key到github网站ssh -T git@github.com      !检查是否链接成功</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> Linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
             
         </tags>
       
@@ -279,31 +279,6 @@
     
     
     <entry>
-      <title>Windows常用命令</title>
-      <link href="/2019/09/07/windows-chang-yong-ming-ling/"/>
-      <url>/2019/09/07/windows-chang-yong-ming-ling/</url>
-      
-        <content type="html"><![CDATA[<h1 id="合并文件"><a href="#合并文件" class="headerlink" title="合并文件"></a>合并文件</h1><ul><li><p>shift+rightclick, choose ‘open command window here’    </p></li><li><p>Copying the command below    </p><p>  <code>for %f in (*.txt) do type &quot;%f&quot; &gt;&gt; output.txt</code></p></li></ul>]]></content>
-      
-      
-      <categories>
-          
-          <category> Windows </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Windows </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Python3科学计算环境搭建</title>
       <link href="/2019/09/07/python-python3-ke-xue-ji-suan-huan-jing-da-jian/"/>
       <url>/2019/09/07/python-python3-ke-xue-ji-suan-huan-jing-da-jian/</url>
@@ -321,6 +296,31 @@
         <tags>
             
             <tag> Python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Windows常用命令</title>
+      <link href="/2019/09/07/windows-chang-yong-ming-ling/"/>
+      <url>/2019/09/07/windows-chang-yong-ming-ling/</url>
+      
+        <content type="html"><![CDATA[<h1 id="合并文件"><a href="#合并文件" class="headerlink" title="合并文件"></a>合并文件</h1><ul><li><p>shift+rightclick, choose ‘open command window here’    </p></li><li><p>Copying the command below    </p><p>  <code>for %f in (*.txt) do type &quot;%f&quot; &gt;&gt; output.txt</code></p></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> Windows </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Windows </tag>
             
         </tags>
       

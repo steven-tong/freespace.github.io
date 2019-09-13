@@ -156,33 +156,6 @@ vim ~/.vimrc.bundles
   </entry>
   
   <entry>
-    <title>Git使用说明</title>
-    <link href="https://steven-tong.github.io/2019/09/07/linux-git-shi-yong-shuo-ming/"/>
-    <id>https://steven-tong.github.io/2019/09/07/linux-git-shi-yong-shuo-ming/</id>
-    <published>2019-09-07T11:38:05.000Z</published>
-    <updated>2019-09-12T02:38:21.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;链接github&quot;&gt;&lt;a href=&quot;#链接github&quot; class=&quot;headerlink&quot; title=&quot;链接github&quot;&gt;&lt;/a&gt;链接github&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;git config --global user.name
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Linux" scheme="https://steven-tong.github.io/categories/Linux/"/>
-    
-    
-      <category term="Linux" scheme="https://steven-tong.github.io/tags/Linux/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Windows安装gcc，gfortran</title>
     <link href="https://steven-tong.github.io/2019/09/07/fortran-windows-an-zhuang-gcc-gfortran/"/>
     <id>https://steven-tong.github.io/2019/09/07/fortran-windows-an-zhuang-gcc-gfortran/</id>
@@ -207,6 +180,33 @@ vim ~/.vimrc.bundles
     
     
       <category term="Fortran" scheme="https://steven-tong.github.io/tags/Fortran/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git使用说明</title>
+    <link href="https://steven-tong.github.io/2019/09/07/linux-git-shi-yong-shuo-ming/"/>
+    <id>https://steven-tong.github.io/2019/09/07/linux-git-shi-yong-shuo-ming/</id>
+    <published>2019-09-07T11:38:05.000Z</published>
+    <updated>2019-09-12T02:38:21.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;链接github&quot;&gt;&lt;a href=&quot;#链接github&quot; class=&quot;headerlink&quot; title=&quot;链接github&quot;&gt;&lt;/a&gt;链接github&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;git config --global user.name
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Linux" scheme="https://steven-tong.github.io/categories/Linux/"/>
+    
+    
+      <category term="Linux" scheme="https://steven-tong.github.io/tags/Linux/"/>
     
   </entry>
   
@@ -328,6 +328,33 @@ vim ~/.vimrc.bundles
   </entry>
   
   <entry>
+    <title>Python3科学计算环境搭建</title>
+    <link href="https://steven-tong.github.io/2019/09/07/python-python3-ke-xue-ji-suan-huan-jing-da-jian/"/>
+    <id>https://steven-tong.github.io/2019/09/07/python-python3-ke-xue-ji-suan-huan-jing-da-jian/</id>
+    <published>2019-09-07T11:38:05.000Z</published>
+    <updated>2019-09-12T02:38:21.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Python3科学计算环境搭建&quot;&gt;&lt;a href=&quot;#Python3科学计算环境搭建&quot; class=&quot;headerlink&quot; title=&quot;Python3科学计算环境搭建&quot;&gt;&lt;/a&gt;Python3科学计算环境搭建&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;sudo
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Python" scheme="https://steven-tong.github.io/categories/Python/"/>
+    
+    
+      <category term="Python" scheme="https://steven-tong.github.io/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Windows常用命令</title>
     <link href="https://steven-tong.github.io/2019/09/07/windows-chang-yong-ming-ling/"/>
     <id>https://steven-tong.github.io/2019/09/07/windows-chang-yong-ming-ling/</id>
@@ -352,33 +379,6 @@ vim ~/.vimrc.bundles
     
     
       <category term="Windows" scheme="https://steven-tong.github.io/tags/Windows/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python3科学计算环境搭建</title>
-    <link href="https://steven-tong.github.io/2019/09/07/python-python3-ke-xue-ji-suan-huan-jing-da-jian/"/>
-    <id>https://steven-tong.github.io/2019/09/07/python-python3-ke-xue-ji-suan-huan-jing-da-jian/</id>
-    <published>2019-09-07T11:38:05.000Z</published>
-    <updated>2019-09-12T02:38:21.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;Python3科学计算环境搭建&quot;&gt;&lt;a href=&quot;#Python3科学计算环境搭建&quot; class=&quot;headerlink&quot; title=&quot;Python3科学计算环境搭建&quot;&gt;&lt;/a&gt;Python3科学计算环境搭建&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;sudo
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Python" scheme="https://steven-tong.github.io/categories/Python/"/>
-    
-    
-      <category term="Python" scheme="https://steven-tong.github.io/tags/Python/"/>
     
   </entry>
   
