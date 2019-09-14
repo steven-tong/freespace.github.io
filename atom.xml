@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Simple Technique</title>
+  <title>EX-Technique</title>
   
-  <subtitle>Simple Is Powerful</subtitle>
+  <subtitle>Knowledge Enrich Mind</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://steven-tong.github.io/"/>
-  <updated>2019-09-12T02:38:21.000Z</updated>
+  <updated>2019-09-14T13:41:33.000Z</updated>
   <id>https://steven-tong.github.io/</id>
   
   <author>
-    <name>Steven Tong</name>
+    <name>Tong Xiaolong (Steven)</name>
     
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Sublime text 3 使用说明</title>
-    <link href="https://steven-tong.github.io/2019/09/11/linux-sublime-text-3-shi-yong-shuo-ming/"/>
-    <id>https://steven-tong.github.io/2019/09/11/linux-sublime-text-3-shi-yong-shuo-ming/</id>
-    <published>2019-09-11T16:38:05.000Z</published>
-    <updated>2019-09-12T02:38:21.000Z</updated>
+    <title>Windows常用命令（持续更新）</title>
+    <link href="https://steven-tong.github.io/2019/09/14/windows-chang-yong-ming-ling/"/>
+    <id>https://steven-tong.github.io/2019/09/14/windows-chang-yong-ming-ling/</id>
+    <published>2019-09-14T13:25:18.000Z</published>
+    <updated>2019-09-14T13:41:33.000Z</updated>
     
     <summary type="html">
     
@@ -29,26 +29,27 @@
       
         
         
-          &lt;h1 id=&quot;修改配置文件&quot;&gt;&lt;a href=&quot;#修改配置文件&quot; class=&quot;headerlink&quot; title=&quot;修改配置文件&quot;&gt;&lt;/a&gt;修改配置文件&lt;/h1&gt;&lt;p&gt;打开配置文件： Perferences-&amp;gt;setting-&amp;gt;user,
+          &lt;h1 id=&quot;合并文件&quot;&gt;&lt;a href=&quot;#合并文件&quot; class=&quot;headerlink&quot; title=&quot;合并文件&quot;&gt;&lt;/a&gt;合并文件&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;shift+rightclick, choose ‘open command window here’ 
         
       
     
     </summary>
     
     
-      <category term="Other" scheme="https://steven-tong.github.io/categories/Other/"/>
+      <category term="Windows" scheme="https://steven-tong.github.io/categories/Windows/"/>
     
     
-      <category term="Other" scheme="https://steven-tong.github.io/tags/Other/"/>
+      <category term="Windows" scheme="https://steven-tong.github.io/tags/Windows/"/>
     
   </entry>
   
   <entry>
-    <title>Vim使用说明</title>
-    <link href="https://steven-tong.github.io/2019/09/11/linux-vim-shi-yong-shuo-ming/"/>
-    <id>https://steven-tong.github.io/2019/09/11/linux-vim-shi-yong-shuo-ming/</id>
-    <published>2019-09-11T14:38:25.000Z</published>
-    <updated>2019-09-12T02:38:21.000Z</updated>
+    <title>Python3科学计算环境搭建</title>
+    <link href="https://steven-tong.github.io/2019/09/14/python-python3-ke-xue-ji-suan-huan-jing-da-jian/"/>
+    <id>https://steven-tong.github.io/2019/09/14/python-python3-ke-xue-ji-suan-huan-jing-da-jian/</id>
+    <published>2019-09-14T10:49:47.000Z</published>
+    <updated>2019-09-14T13:41:33.000Z</updated>
     
     <summary type="html">
     
@@ -56,253 +57,26 @@
       
         
         
-          &lt;h1 id=&quot;建立文件&quot;&gt;&lt;a href=&quot;#建立文件&quot; class=&quot;headerlink&quot; title=&quot;建立文件&quot;&gt;&lt;/a&gt;建立文件&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;vim ~/.vimrc   &amp;quot;vim配置文件
-vim ~/.vimrc.bundles   
+          &lt;h1 id=&quot;Python3科学计算环境搭建&quot;&gt;&lt;a href=&quot;#Python3科学计算环境搭建&quot; class=&quot;headerlink&quot; title=&quot;Python3科学计算环境搭建&quot;&gt;&lt;/a&gt;Python3科学计算环境搭建&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;sudo
         
       
     
     </summary>
     
     
-      <category term="Linux" scheme="https://steven-tong.github.io/categories/Linux/"/>
+      <category term="Python" scheme="https://steven-tong.github.io/categories/Python/"/>
     
     
-      <category term="Linux" scheme="https://steven-tong.github.io/tags/Linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo使用说明</title>
-    <link href="https://steven-tong.github.io/2019/09/08/linux-hexo-shi-yong-shuo-ming/"/>
-    <id>https://steven-tong.github.io/2019/09/08/linux-hexo-shi-yong-shuo-ming/</id>
-    <published>2019-09-08T11:38:05.000Z</published>
-    <updated>2019-09-12T02:38:21.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;Hexo使用说明&quot;&gt;&lt;a href=&quot;#Hexo使用说明&quot; class=&quot;headerlink&quot; title=&quot;Hexo使用说明&quot;&gt;&lt;/a&gt;Hexo使用说明&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;首先附上hexo官方网址，里面有详细教程及主题。&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Linux" scheme="https://steven-tong.github.io/categories/Linux/"/>
-    
-    
-      <category term="Linux" scheme="https://steven-tong.github.io/tags/Linux/"/>
+      <category term="Python" scheme="https://steven-tong.github.io/tags/Python/"/>
     
   </entry>
   
   <entry>
-    <title>ABAQUS基本命令</title>
-    <link href="https://steven-tong.github.io/2019/09/07/abaqus-ji-ben-ming-ling/"/>
-    <id>https://steven-tong.github.io/2019/09/07/abaqus-ji-ben-ming-ling/</id>
-    <published>2019-09-07T11:38:05.000Z</published>
-    <updated>2019-09-12T02:38:21.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;命令行运行Abaqus&quot;&gt;&lt;a href=&quot;#命令行运行Abaqus&quot; class=&quot;headerlink&quot; title=&quot;命令行运行Abaqus&quot;&gt;&lt;/a&gt;命令行运行Abaqus&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;abq6132 j=Job-1
-        
-      
-    
-    </summary>
-    
-    
-      <category term="ABAQUS" scheme="https://steven-tong.github.io/categories/ABAQUS/"/>
-    
-    
-      <category term="ABAQUS" scheme="https://steven-tong.github.io/tags/ABAQUS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ABAQUS计算Cavitation</title>
-    <link href="https://steven-tong.github.io/2019/09/07/abaqus-ji-suan-cavitation/"/>
-    <id>https://steven-tong.github.io/2019/09/07/abaqus-ji-suan-cavitation/</id>
-    <published>2019-09-07T11:38:05.000Z</published>
-    <updated>2019-09-12T02:38:21.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;In abaqus CAE, create node set for the whole acoustic model in the ‘tools’ manu, then create another node set under
-        
-      
-    
-    </summary>
-    
-    
-      <category term="ABAQUS" scheme="https://steven-tong.github.io/categories/ABAQUS/"/>
-    
-    
-      <category term="ABAQUS" scheme="https://steven-tong.github.io/tags/ABAQUS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Windows安装gcc，gfortran</title>
-    <link href="https://steven-tong.github.io/2019/09/07/fortran-windows-an-zhuang-gcc-gfortran/"/>
-    <id>https://steven-tong.github.io/2019/09/07/fortran-windows-an-zhuang-gcc-gfortran/</id>
-    <published>2019-09-07T11:38:05.000Z</published>
-    <updated>2019-09-12T02:38:21.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Download mingw-64: &lt;a href=&quot;http://mingw-w64.org/doku.php/download&quot; target=&quot;_blank&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Fortran" scheme="https://steven-tong.github.io/categories/Fortran/"/>
-    
-    
-      <category term="Fortran" scheme="https://steven-tong.github.io/tags/Fortran/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Git使用说明</title>
-    <link href="https://steven-tong.github.io/2019/09/07/linux-git-shi-yong-shuo-ming/"/>
-    <id>https://steven-tong.github.io/2019/09/07/linux-git-shi-yong-shuo-ming/</id>
-    <published>2019-09-07T11:38:05.000Z</published>
-    <updated>2019-09-12T02:38:21.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;链接github&quot;&gt;&lt;a href=&quot;#链接github&quot; class=&quot;headerlink&quot; title=&quot;链接github&quot;&gt;&lt;/a&gt;链接github&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;git config --global user.name
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Linux" scheme="https://steven-tong.github.io/categories/Linux/"/>
-    
-    
-      <category term="Linux" scheme="https://steven-tong.github.io/tags/Linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Linux常用命令</title>
-    <link href="https://steven-tong.github.io/2019/09/07/linux-chang-yong-ming-ling/"/>
-    <id>https://steven-tong.github.io/2019/09/07/linux-chang-yong-ming-ling/</id>
-    <published>2019-09-07T11:38:05.000Z</published>
-    <updated>2019-09-12T02:38:21.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;压缩-解压&quot;&gt;&lt;a href=&quot;#压缩-解压&quot; class=&quot;headerlink&quot; title=&quot;压缩/解压&quot;&gt;&lt;/a&gt;压缩/解压&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;Look up&lt;pre&gt;&lt;code&gt;tar   -ztvf   /.../*.tar.gz  
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Linux" scheme="https://steven-tong.github.io/categories/Linux/"/>
-    
-    
-      <category term="Linux" scheme="https://steven-tong.github.io/tags/Linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>MATLAB使用技巧</title>
-    <link href="https://steven-tong.github.io/2019/09/07/matlab-shi-yong-ji-qiao/"/>
-    <id>https://steven-tong.github.io/2019/09/07/matlab-shi-yong-ji-qiao/</id>
-    <published>2019-09-07T11:38:05.000Z</published>
-    <updated>2019-09-12T02:38:21.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;同时运行多个程序代码文件&quot;&gt;&lt;a href=&quot;#同时运行多个程序代码文件&quot; class=&quot;headerlink&quot; title=&quot;同时运行多个程序代码文件&quot;&gt;&lt;/a&gt;同时运行多个程序代码文件&lt;/h1&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Put all
-        
-      
-    
-    </summary>
-    
-    
-      <category term="MATLAB" scheme="https://steven-tong.github.io/categories/MATLAB/"/>
-    
-    
-      <category term="MATLAB" scheme="https://steven-tong.github.io/tags/MATLAB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>MATLAB并行计算设置</title>
-    <link href="https://steven-tong.github.io/2019/09/07/matlab-bing-xing-ji-suan-she-zhi/"/>
-    <id>https://steven-tong.github.io/2019/09/07/matlab-bing-xing-ji-suan-she-zhi/</id>
-    <published>2019-09-07T11:38:05.000Z</published>
-    <updated>2019-09-12T02:38:21.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Go to ‘home-environment-parallel-parallel preferences’ to set the default cluster    &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Go to
-        
-      
-    
-    </summary>
-    
-    
-      <category term="MATLAB" scheme="https://steven-tong.github.io/categories/MATLAB/"/>
-    
-    
-      <category term="MATLAB" scheme="https://steven-tong.github.io/tags/MATLAB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>日常设置</title>
-    <link href="https://steven-tong.github.io/2019/09/07/other-ri-chang-she-zhi/"/>
-    <id>https://steven-tong.github.io/2019/09/07/other-ri-chang-she-zhi/</id>
-    <published>2019-09-07T11:38:05.000Z</published>
-    <updated>2019-09-12T02:38:21.000Z</updated>
+    <title>日常设置（持续更新）</title>
+    <link href="https://steven-tong.github.io/2019/09/14/other-ri-chang-she-zhi/"/>
+    <id>https://steven-tong.github.io/2019/09/14/other-ri-chang-she-zhi/</id>
+    <published>2019-09-14T09:34:08.000Z</published>
+    <updated>2019-09-14T13:41:33.000Z</updated>
     
     <summary type="html">
     
@@ -328,11 +102,11 @@ vim ~/.vimrc.bundles
   </entry>
   
   <entry>
-    <title>Python3科学计算环境搭建</title>
-    <link href="https://steven-tong.github.io/2019/09/07/python-python3-ke-xue-ji-suan-huan-jing-da-jian/"/>
-    <id>https://steven-tong.github.io/2019/09/07/python-python3-ke-xue-ji-suan-huan-jing-da-jian/</id>
-    <published>2019-09-07T11:38:05.000Z</published>
-    <updated>2019-09-12T02:38:21.000Z</updated>
+    <title>MATLAB并行计算设置</title>
+    <link href="https://steven-tong.github.io/2019/09/13/matlab-bing-xing-ji-suan-she-zhi/"/>
+    <id>https://steven-tong.github.io/2019/09/13/matlab-bing-xing-ji-suan-she-zhi/</id>
+    <published>2019-09-13T16:42:05.000Z</published>
+    <updated>2019-09-14T13:41:33.000Z</updated>
     
     <summary type="html">
     
@@ -340,26 +114,29 @@ vim ~/.vimrc.bundles
       
         
         
-          &lt;h1 id=&quot;Python3科学计算环境搭建&quot;&gt;&lt;a href=&quot;#Python3科学计算环境搭建&quot; class=&quot;headerlink&quot; title=&quot;Python3科学计算环境搭建&quot;&gt;&lt;/a&gt;Python3科学计算环境搭建&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;sudo
+          &lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Go to ‘home-environment-parallel-parallel preferences’ to set the default cluster    &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Go to
         
       
     
     </summary>
     
     
-      <category term="Python" scheme="https://steven-tong.github.io/categories/Python/"/>
+      <category term="MATLAB" scheme="https://steven-tong.github.io/categories/MATLAB/"/>
     
     
-      <category term="Python" scheme="https://steven-tong.github.io/tags/Python/"/>
+      <category term="MATLAB" scheme="https://steven-tong.github.io/tags/MATLAB/"/>
     
   </entry>
   
   <entry>
-    <title>Windows常用命令</title>
-    <link href="https://steven-tong.github.io/2019/09/07/windows-chang-yong-ming-ling/"/>
-    <id>https://steven-tong.github.io/2019/09/07/windows-chang-yong-ming-ling/</id>
-    <published>2019-09-07T11:38:05.000Z</published>
-    <updated>2019-09-12T02:38:21.000Z</updated>
+    <title>MATLAB使用技巧</title>
+    <link href="https://steven-tong.github.io/2019/09/13/matlab-shi-yong-ji-qiao/"/>
+    <id>https://steven-tong.github.io/2019/09/13/matlab-shi-yong-ji-qiao/</id>
+    <published>2019-09-13T15:05:09.000Z</published>
+    <updated>2019-09-14T13:41:33.000Z</updated>
     
     <summary type="html">
     
@@ -367,18 +144,251 @@ vim ~/.vimrc.bundles
       
         
         
-          &lt;h1 id=&quot;合并文件&quot;&gt;&lt;a href=&quot;#合并文件&quot; class=&quot;headerlink&quot; title=&quot;合并文件&quot;&gt;&lt;/a&gt;合并文件&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;shift+rightclick, choose ‘open command window here’ 
+          &lt;h1 id=&quot;同时运行多个程序代码文件&quot;&gt;&lt;a href=&quot;#同时运行多个程序代码文件&quot; class=&quot;headerlink&quot; title=&quot;同时运行多个程序代码文件&quot;&gt;&lt;/a&gt;同时运行多个程序代码文件&lt;/h1&gt;&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Put all
         
       
     
     </summary>
     
     
-      <category term="Windows" scheme="https://steven-tong.github.io/categories/Windows/"/>
+      <category term="MATLAB" scheme="https://steven-tong.github.io/categories/MATLAB/"/>
     
+    
+      <category term="MATLAB" scheme="https://steven-tong.github.io/tags/MATLAB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Sublime text 3 使用说明</title>
+    <link href="https://steven-tong.github.io/2019/09/13/linux-sublime-text-3-shi-yong-shuo-ming/"/>
+    <id>https://steven-tong.github.io/2019/09/13/linux-sublime-text-3-shi-yong-shuo-ming/</id>
+    <published>2019-09-13T14:38:48.000Z</published>
+    <updated>2019-09-14T13:41:33.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;修改配置文件&quot;&gt;&lt;a href=&quot;#修改配置文件&quot; class=&quot;headerlink&quot; title=&quot;修改配置文件&quot;&gt;&lt;/a&gt;修改配置文件&lt;/h1&gt;&lt;p&gt;打开配置文件： Perferences-&amp;gt;setting-&amp;gt;user,
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Linux" scheme="https://steven-tong.github.io/categories/Linux/"/>
+    
+    
+      <category term="Linux" scheme="https://steven-tong.github.io/tags/Linux/"/>
+    
+      <category term="Sublime" scheme="https://steven-tong.github.io/tags/Sublime/"/>
     
       <category term="Windows" scheme="https://steven-tong.github.io/tags/Windows/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux常用命令（持续更新）</title>
+    <link href="https://steven-tong.github.io/2019/09/13/linux-chang-yong-ming-ling/"/>
+    <id>https://steven-tong.github.io/2019/09/13/linux-chang-yong-ming-ling/</id>
+    <published>2019-09-13T13:54:07.000Z</published>
+    <updated>2019-09-14T13:41:33.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;压缩-解压&quot;&gt;&lt;a href=&quot;#压缩-解压&quot; class=&quot;headerlink&quot; title=&quot;压缩/解压&quot;&gt;&lt;/a&gt;压缩/解压&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;Look up&lt;pre&gt;&lt;code&gt;tar   -ztvf   /.../*.tar.gz  
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Linux" scheme="https://steven-tong.github.io/categories/Linux/"/>
+    
+    
+      <category term="Linux" scheme="https://steven-tong.github.io/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vim使用说明</title>
+    <link href="https://steven-tong.github.io/2019/09/13/linux-vim-shi-yong-shuo-ming/"/>
+    <id>https://steven-tong.github.io/2019/09/13/linux-vim-shi-yong-shuo-ming/</id>
+    <published>2019-09-13T12:48:27.000Z</published>
+    <updated>2019-09-14T13:41:33.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;建立文件&quot;&gt;&lt;a href=&quot;#建立文件&quot; class=&quot;headerlink&quot; title=&quot;建立文件&quot;&gt;&lt;/a&gt;建立文件&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;vim ~/.vimrc   &amp;quot;vim配置文件
+vim ~/.vimrc.bundles   
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Linux" scheme="https://steven-tong.github.io/categories/Linux/"/>
+    
+    
+      <category term="Linux" scheme="https://steven-tong.github.io/tags/Linux/"/>
+    
+      <category term="Vim" scheme="https://steven-tong.github.io/tags/Vim/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo使用说明</title>
+    <link href="https://steven-tong.github.io/2019/09/13/linux-hexo-shi-yong-shuo-ming/"/>
+    <id>https://steven-tong.github.io/2019/09/13/linux-hexo-shi-yong-shuo-ming/</id>
+    <published>2019-09-13T10:35:17.000Z</published>
+    <updated>2019-09-14T13:41:33.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Hexo使用说明&quot;&gt;&lt;a href=&quot;#Hexo使用说明&quot; class=&quot;headerlink&quot; title=&quot;Hexo使用说明&quot;&gt;&lt;/a&gt;Hexo使用说明&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;首先附上hexo官方网址，里面有详细教程及主题。&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Linux" scheme="https://steven-tong.github.io/categories/Linux/"/>
+    
+    
+      <category term="Linux" scheme="https://steven-tong.github.io/tags/Linux/"/>
+    
+      <category term="Hexo" scheme="https://steven-tong.github.io/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git使用说明</title>
+    <link href="https://steven-tong.github.io/2019/09/12/linux-git-shi-yong-shuo-ming/"/>
+    <id>https://steven-tong.github.io/2019/09/12/linux-git-shi-yong-shuo-ming/</id>
+    <published>2019-09-12T16:45:12.000Z</published>
+    <updated>2019-09-14T13:41:33.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;链接github&quot;&gt;&lt;a href=&quot;#链接github&quot; class=&quot;headerlink&quot; title=&quot;链接github&quot;&gt;&lt;/a&gt;链接github&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;git config --global user.name
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Linux" scheme="https://steven-tong.github.io/categories/Linux/"/>
+    
+    
+      <category term="Linux" scheme="https://steven-tong.github.io/tags/Linux/"/>
+    
+      <category term="Git" scheme="https://steven-tong.github.io/tags/Git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Windows安装gcc，gfortran</title>
+    <link href="https://steven-tong.github.io/2019/09/12/fortran-windows-an-zhuang-gcc-gfortran/"/>
+    <id>https://steven-tong.github.io/2019/09/12/fortran-windows-an-zhuang-gcc-gfortran/</id>
+    <published>2019-09-12T14:58:25.000Z</published>
+    <updated>2019-09-14T13:41:33.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Download mingw-64: &lt;a href=&quot;http://mingw-w64.org/doku.php/download&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Fortran" scheme="https://steven-tong.github.io/categories/Fortran/"/>
+    
+    
+      <category term="Fortran" scheme="https://steven-tong.github.io/tags/Fortran/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ABAQUS计算Cavitation</title>
+    <link href="https://steven-tong.github.io/2019/09/12/abaqus-ji-suan-cavitation/"/>
+    <id>https://steven-tong.github.io/2019/09/12/abaqus-ji-suan-cavitation/</id>
+    <published>2019-09-12T13:42:07.000Z</published>
+    <updated>2019-09-14T13:41:33.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;ul&gt;
+&lt;li&gt;&lt;p&gt;In abaqus CAE, create node set for the whole acoustic model in the ‘tools’ manu, then create another node set under
+        
+      
+    
+    </summary>
+    
+    
+      <category term="ABAQUS" scheme="https://steven-tong.github.io/categories/ABAQUS/"/>
+    
+    
+      <category term="ABAQUS" scheme="https://steven-tong.github.io/tags/ABAQUS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ABAQUS基本命令 (持续更新）</title>
+    <link href="https://steven-tong.github.io/2019/09/12/abaqus-ji-ben-ming-ling/"/>
+    <id>https://steven-tong.github.io/2019/09/12/abaqus-ji-ben-ming-ling/</id>
+    <published>2019-09-12T11:38:05.000Z</published>
+    <updated>2019-09-14T13:41:33.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;命令行运行Abaqus&quot;&gt;&lt;a href=&quot;#命令行运行Abaqus&quot; class=&quot;headerlink&quot; title=&quot;命令行运行Abaqus&quot;&gt;&lt;/a&gt;命令行运行Abaqus&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;abq6132 j=Job-1
+        
+      
+    
+    </summary>
+    
+    
+      <category term="ABAQUS" scheme="https://steven-tong.github.io/categories/ABAQUS/"/>
+    
+    
+      <category term="ABAQUS" scheme="https://steven-tong.github.io/tags/ABAQUS/"/>
     
   </entry>
   
