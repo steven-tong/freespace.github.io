@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>Samba使用说明</title>
+      <link href="/2019/09/15/linux-samba-shi-yong-shuo-ming/"/>
+      <url>/2019/09/15/linux-samba-shi-yong-shuo-ming/</url>
+      
+        <content type="html"><![CDATA[<h1 id="安装Samba"><a href="#安装Samba" class="headerlink" title="安装Samba"></a>安装Samba</h1><pre><code>sudo aptitude install sambasudo aptitude install samba-common</code></pre><h1 id="配置samba"><a href="#配置samba" class="headerlink" title="配置samba"></a>配置samba</h1><pre><code>sudo vim /etc/samba/smb.conf  # 配置samba</code></pre><p>在文件末尾添加如下</p><pre><code>[share]   path = /home/share    # 要共享的文件夹，任意文件夹均可，提前配置好权限   available = yes   browseable = yes   #public = yes   writable = yes</code></pre><p>保存退出</p><h1 id="创建samba账户"><a href="#创建samba账户" class="headerlink" title="创建samba账户"></a>创建samba账户</h1><pre><code>sudo touch /etc/samba/smbpasswdsudo smbpasswd -a 用户名   #注意：用户名必须是当前登录linux的用户名</code></pre><h1 id="重启samba"><a href="#重启samba" class="headerlink" title="重启samba"></a>重启samba</h1><pre><code>sudo /etc/init.d/smbd restart</code></pre><h1 id="Windows端设置"><a href="#Windows端设置" class="headerlink" title="Windows端设置"></a>Windows端设置</h1><ul><li>win+R调出运行   </li><li>输入ip地址，例如：<code>\\192.168.1.128</code>   </li><li>输入刚创建好的samba账户密码即可</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> Linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+            <tag> Samba </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Windows常用命令（持续更新）</title>
       <link href="/2019/09/14/windows-chang-yong-ming-ling/"/>
       <url>/2019/09/14/windows-chang-yong-ming-ling/</url>
