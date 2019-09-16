@@ -4,9 +4,23 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Samba使用说明, Technique">
-    <meta name="description" content="安装Sambasudo aptitude install samba
-sudo aptitude install samba-common配置sambasudo vim /etc/samba/smb.conf  # 配置samba在文件末尾">
+    <meta name="keywords" content="Markdown 使用说明, Technique">
+    <meta name="description" content="标题# 一级标题
+## 二级标题
+### 三级标题
+#### 四级标题
+##### 五级标题
+###### 六级标题段落
+换行   
+
+两个以上空格加回车   
+
+
+字体
+  普通文本
+  *斜体文本*
+  **粗体文本**
+  ***粗斜">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -14,7 +28,7 @@ sudo aptitude install samba-common配置sambasudo vim /etc/samba/smb.conf  # 配
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Samba使用说明 | EX-Technique</title>
+    <title>Markdown 使用说明 | EX-Technique</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -200,13 +214,13 @@ sudo aptitude install samba-common配置sambasudo vim /etc/samba/smb.conf  # 配
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        Samba使用说明
+                        Markdown 使用说明
                     </div>
                 </div>
             </div>
@@ -321,8 +335,12 @@ sudo aptitude install samba-common配置sambasudo vim /etc/samba/smb.conf  # 配
                                 <span class="chip bg-color">Linux</span>
                             </a>
                         
-                            <a href="/tags/Samba/" target="_blank">
-                                <span class="chip bg-color">Samba</span>
+                            <a href="/tags/Markdown/" target="_blank">
+                                <span class="chip bg-color">Markdown</span>
+                            </a>
+                        
+                            <a href="/tags/Windows/" target="_blank">
+                                <span class="chip bg-color">Windows</span>
                             </a>
                         
                     </div>
@@ -352,14 +370,14 @@ sudo aptitude install samba-common配置sambasudo vim /etc/samba/smb.conf  # 配
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>Word Count:&nbsp;&nbsp;
-                        140
+                        838
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>Read Times:&nbsp;&nbsp;
-                        1 Min
+                        3 Min
                     </div>
                     
                 
@@ -375,20 +393,155 @@ sudo aptitude install samba-common配置sambasudo vim /etc/samba/smb.conf  # 配
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="安装Samba"><a href="#安装Samba" class="headerlink" title="安装Samba"></a>安装Samba</h1><pre><code>sudo aptitude install samba
-sudo aptitude install samba-common</code></pre><h1 id="配置samba"><a href="#配置samba" class="headerlink" title="配置samba"></a>配置samba</h1><pre><code>sudo vim /etc/samba/smb.conf  # 配置samba</code></pre><p>在文件末尾添加如下</p>
-<pre><code>[share]
-   path = /home/share    # 要共享的文件夹，任意文件夹均可，提前配置好权限
-   available = yes
-   browseable = yes
-   #public = yes
-   writable = yes</code></pre><p>保存退出</p>
-<h1 id="创建samba账户"><a href="#创建samba账户" class="headerlink" title="创建samba账户"></a>创建samba账户</h1><pre><code>sudo touch /etc/samba/smbpasswd
-sudo smbpasswd -a 用户名   #注意：用户名必须是当前登录linux的用户名</code></pre><h1 id="重启samba"><a href="#重启samba" class="headerlink" title="重启samba"></a>重启samba</h1><pre><code>sudo /etc/init.d/smbd restart</code></pre><h1 id="Windows端设置"><a href="#Windows端设置" class="headerlink" title="Windows端设置"></a>Windows端设置</h1><ul>
-<li>win+R调出运行   </li>
-<li>输入ip地址，例如：<code>\\192.168.1.128</code>   </li>
-<li>输入刚创建好的samba账户密码即可</li>
+                <h1 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h1><pre><code># 一级标题
+## 二级标题
+### 三级标题
+#### 四级标题
+##### 五级标题
+###### 六级标题</code></pre><h1 id="段落"><a href="#段落" class="headerlink" title="段落"></a>段落</h1><ul>
+<li><p>换行   </p>
+<blockquote>
+<p>两个以上空格加回车   </p>
+</blockquote>
+</li>
+<li><p>字体</p>
+<pre><code>  普通文本
+  *斜体文本*
+  **粗体文本**
+  ***粗斜体文本***</code></pre></li>
+<li><p>分隔线</p>
+<blockquote>
+<p>三个以上<code>*</code>或<code>-</code>，中间可以有空格</p>
+<pre><code>  ***或* * *
+  ---或- - -</code></pre></blockquote>
+</li>
+<li><p>删除线   </p>
+<blockquote>
+<p>文字两端加双波浪线<code>~~</code>即可</p>
+<pre><code>  ～～删除线～～</code></pre></blockquote>
+</li>
+<li><p>下划线   </p>
+<blockquote>
+<p>通过<code>&lt;u&gt;</code>标签来实现</p>
+<pre><code>  &lt;u&gt;下划线文本&lt;/u&gt;</code></pre></blockquote>
+</li>
+<li><p>脚注   </p>
+<blockquote>
+<p>需要创建脚注的文字 [^脚注]。<br>[^脚注]: 脚注内容</p>
+</blockquote>
+</li>
 </ul>
+<h1 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h1><ul>
+<li><p>无序列表   </p>
+<blockquote>
+<p>无序列表使用星号<code>*</code>、加号<code>+</code>或是减号<code>-</code>作为列表标记，例如：</p>
+<pre><code>  * 第一项
+  * 第二项
+  * 第三项</code></pre></blockquote>
+</li>
+<li><p>有序列表   </p>
+<blockquote>
+<p>有序列表使用数字并加上 <code>.</code> 号来表示， 例如：</p>
+<pre><code>  1. 第一项
+  2. 第二项
+  3. 第三项</code></pre></blockquote>
+</li>
+<li><p>列表嵌套   </p>
+<blockquote>
+<p>列表嵌套只需在子列表中的选项添加四个空格即可，例如：</p>
+<pre><code>  1. 第一项：
+      - 第一项嵌套的第一个元素
+      - 第一项嵌套的第二个元素
+  2. 第二项：
+      - 第二项嵌套的第一个元素
+      - 第二项嵌套的第一个元素</code></pre></blockquote>
+</li>
+</ul>
+<h1 id="区块"><a href="#区块" class="headerlink" title="区块"></a>区块</h1><ul>
+<li><p>区块使用   </p>
+<blockquote>
+<p>区块引用是在段落开头使用<code>&gt;</code>符号 ，然后后面紧跟一个空格符号，例如：</p>
+<pre><code>区块文字1
+区块文字2
+区块文字3</code></pre></blockquote>
+</li>
+<li><p>区块嵌套   </p>
+<blockquote>
+<p>一个<code>&gt;</code>符号是最外层，两个<code>&gt;</code>符号是第一层嵌套，以此类推退，例如：</p>
+<pre><code>最外层
+&gt; 第一层嵌套
+&gt; &gt; 第二层嵌套</code></pre></blockquote>
+</li>
+<li><p>区块使用列表   </p>
+<blockquote>
+<p>直接使用，例如：</p>
+<pre><code>区块中使用列表
+1. 第一项
+2. 第二项
++ 第一项
++ 第二项
++ 第三项</code></pre></blockquote>
+</li>
+<li><p>列表中使用区块   </p>
+<blockquote>
+<p>在<code>&gt;</code>前添加四个空格的缩进，例如：</p>
+<pre><code>  * 第一项
+区块文字1
+区块文字2
+  * 第二项</code></pre></blockquote>
+</li>
+</ul>
+<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><ul>
+<li><p>行间代码   </p>
+<blockquote>
+<p>直接用反引号 ( ` ) 包起来，例如；</p>
+<pre><code>  `function`  #函数</code></pre></blockquote>
+</li>
+<li><p>区块代码   </p>
+<blockquote>
+<p>用 ( ``` ) 包裹一段代码，并指定一种语言（也可以不指定），例如:</p>
+</blockquote>
+<blockquote>
+<p>```python<br>str = input(“请输入：”)<br>print (“你输入的内容是: “, str)<br>```</p>
+</blockquote>
+</li>
+</ul>
+<h1 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h1><pre><code>[链接名称](链接地址)
+
+或者
+
+&lt;链接地址&gt;</code></pre><h1 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h1><ul>
+<li>开头一个感叹号 <code>!</code>   </li>
+<li>接着一个方括号，里面放上图片的替代文字   </li>
+<li>接着一个普通括号，里面放上图片的网址，最后还可以用引号包住并加上选择性的 ‘title’ 属性的文字。</li>
+<li>例如：<pre><code>  ![alt 属性文本](图片地址 &quot;可选标题&quot;)</code></pre></li>
+</ul>
+<h1 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h1><ul>
+<li>使用 <code>|</code> 来分隔不同的单元格，使用 <code>-</code> 来分隔表头和其他行，例如：<pre><code>  |  表头   | 表头  |
+  |  ----  | ----  |
+  | 单元格  | 单元格 |
+  | 单元格  | 单元格 |</code></pre></li>
+<li>表格对齐   <ul>
+<li><code>-:</code> 设置内容和标题栏居右对齐。   </li>
+<li><code>:-</code> 设置内容和标题栏居左对齐。   </li>
+<li><code>:-:</code> 设置内容和标题栏居中对齐。   </li>
+<li>例如：<pre><code>| 左对齐 | 右对齐 | 居中对齐 |
+| :-----| ----: | :----: |
+| 单元格 | 单元格 | 单元格 |
+| 单元格 | 单元格 | 单元格 |</code></pre></li>
+</ul>
+</li>
+</ul>
+<h1 id="转义"><a href="#转义" class="headerlink" title="转义"></a>转义</h1><p>使用反斜杠<code>\</code>转义特殊字符, 例如：<code>\*</code>。</p>
+<h1 id="公式"><a href="#公式" class="headerlink" title="公式"></a>公式</h1><p>使用两个美元符 <code>$$</code> 包裹 TeX 或 LaTeX 格式的数学公式，例如：</p>
+<pre><code>$$
+\mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix} 
+\mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\
+\frac{\partial X}{\partial u} &amp;  \frac{\partial Y}{\partial u} &amp; 0 \\
+\frac{\partial X}{\partial v} &amp;  \frac{\partial Y}{\partial v} &amp; 0 \\
+\end{vmatrix}
+$$tep1}{\style{visibility:hidden}{(x+1)(x+1)}}
+$$</code></pre><p>注意：提交后需加载 Mathjax 对数学公式进行渲染。</p>
 
             </div>
             <hr/>
@@ -426,9 +579,10 @@ sudo smbpasswd -a 用户名   #注意：用户名必须是当前登录linux的�
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;Current
+            </div>
             <div class="card">
                 <a href="/2019/09/15/linux-markdown-shi-yong-shuo-ming/">
                     <div class="card-image">
@@ -461,9 +615,9 @@ sudo smbpasswd -a 用户名   #注意：用户名必须是当前登录linux的�
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-09-15
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-09-15
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -476,6 +630,7 @@ sudo smbpasswd -a 用户名   #注意：用户名必须是当前登录linux的�
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -502,35 +657,32 @@ sudo smbpasswd -a 用户名   #注意：用户名必须是当前登录linux的�
                 Next&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/09/14/windows-chang-yong-ming-ling/">
+                <a href="/2019/09/15/linux-samba-shi-yong-shuo-ming/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="Windows常用命令（持续更新）">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="Samba使用说明">
                         
-                        <span class="card-title">Windows常用命令（持续更新）</span>
+                        <span class="card-title">Samba使用说明</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            合并文件
-shift+rightclick, choose ‘open command window here’    
-
-Copying the command below    
-  for %f in (*.txt) do type 
+                            安装Sambasudo aptitude install samba
+sudo aptitude install samba-common配置sambasudo vim /etc/samba/smb.conf  # 配置samba在文件末尾
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-09-14
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-09-15
                             </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Windows/" class="post-category" target="_blank">
-                                    Windows
+                            <a href="/categories/Linux/" class="post-category" target="_blank">
+                                    Linux
                                 </a>
                             
                             
@@ -540,8 +692,12 @@ Copying the command below
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Windows/" target="_blank">
-                        <span class="chip bg-color">Windows</span>
+                    <a href="/tags/Linux/" target="_blank">
+                        <span class="chip bg-color">Linux</span>
+                    </a>
+                    
+                    <a href="/tags/Samba/" target="_blank">
+                        <span class="chip bg-color">Samba</span>
                     </a>
                     
                 </div>
