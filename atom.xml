@@ -83,6 +83,34 @@ sudo aptitude
   </entry>
   
   <entry>
+    <title>禁止win10自动安装软件</title>
+    <link href="https://steven-tong.github.io/2019/09/14/windows-jin-zhi-win10-zi-dong-an-zhuang-ruan-jian/"/>
+    <id>https://steven-tong.github.io/2019/09/14/windows-jin-zhi-win10-zi-dong-an-zhuang-ruan-jian/</id>
+    <published>2019-09-14T13:25:18.000Z</published>
+    <updated>2019-09-22T15:11:01.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;win+R&lt;/code&gt;, 输入&lt;code&gt;regedit&lt;/code&gt;打开注册表编辑器  
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Windows" scheme="https://steven-tong.github.io/categories/Windows/"/>
+    
+    
+      <category term="Windows" scheme="https://steven-tong.github.io/tags/Windows/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Windows常用命令（持续更新）</title>
     <link href="https://steven-tong.github.io/2019/09/14/windows-chang-yong-ming-ling/"/>
     <id>https://steven-tong.github.io/2019/09/14/windows-chang-yong-ming-ling/</id>

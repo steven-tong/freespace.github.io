@@ -4,9 +4,13 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Samba使用说明, Technique">
-    <meta name="description" content="安装Sambasudo aptitude install samba
-sudo aptitude install samba-common配置sambasudo vim /etc/samba/smb.conf  # 配置samba在文件末尾">
+    <meta name="keywords" content="禁止win10自动安装软件, Technique">
+    <meta name="description" content="
+win+R, 输入regedit打开注册表编辑器   
+
+展开以下位置HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\   
+
+右键点击Windows，新建key，命名为Clo">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -14,7 +18,7 @@ sudo aptitude install samba-common配置sambasudo vim /etc/samba/smb.conf  # 配
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Samba使用说明 | EX-Technique</title>
+    <title>禁止win10自动安装软件 | EX-Technique</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -200,13 +204,13 @@ sudo aptitude install samba-common配置sambasudo vim /etc/samba/smb.conf  # 配
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        Samba使用说明
+                        禁止win10自动安装软件
                     </div>
                 </div>
             </div>
@@ -317,12 +321,8 @@ sudo aptitude install samba-common配置sambasudo vim /etc/samba/smb.conf  # 配
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Linux/" target="_blank">
-                                <span class="chip bg-color">Linux</span>
-                            </a>
-                        
-                            <a href="/tags/Samba/" target="_blank">
-                                <span class="chip bg-color">Samba</span>
+                            <a href="/tags/Windows/" target="_blank">
+                                <span class="chip bg-color">Windows</span>
                             </a>
                         
                     </div>
@@ -333,8 +333,8 @@ sudo aptitude install samba-common配置sambasudo vim /etc/samba/smb.conf  # 配
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Linux/" class="post-category" target="_blank">
-                                Linux
+                            <a href="/categories/Windows/" class="post-category" target="_blank">
+                                Windows
                             </a>
                         
                     </div>
@@ -345,14 +345,14 @@ sudo aptitude install samba-common配置sambasudo vim /etc/samba/smb.conf  # 配
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2019-09-15
+                    2019-09-14
                 </div>
 
                 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>Word Count:&nbsp;&nbsp;
-                        140
+                        83
                     </div>
                     
 
@@ -375,20 +375,20 @@ sudo aptitude install samba-common配置sambasudo vim /etc/samba/smb.conf  # 配
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="安装Samba"><a href="#安装Samba" class="headerlink" title="安装Samba"></a>安装Samba</h1><pre><code>sudo aptitude install samba
-sudo aptitude install samba-common</code></pre><h1 id="配置samba"><a href="#配置samba" class="headerlink" title="配置samba"></a>配置samba</h1><pre><code>sudo vim /etc/samba/smb.conf  # 配置samba</code></pre><p>在文件末尾添加如下</p>
-<pre><code>[share]
-   path = /home/share    # 要共享的文件夹，任意文件夹均可，提前配置好权限
-   available = yes
-   browseable = yes
-   #public = yes
-   writable = yes</code></pre><p>保存退出</p>
-<h1 id="创建samba账户"><a href="#创建samba账户" class="headerlink" title="创建samba账户"></a>创建samba账户</h1><pre><code>sudo touch /etc/samba/smbpasswd
-sudo smbpasswd -a 用户名   #注意：用户名必须是当前登录linux的用户名</code></pre><h1 id="重启samba"><a href="#重启samba" class="headerlink" title="重启samba"></a>重启samba</h1><pre><code>sudo /etc/init.d/smbd restart</code></pre><h1 id="Windows端设置"><a href="#Windows端设置" class="headerlink" title="Windows端设置"></a>Windows端设置</h1><ul>
-<li>win+R调出运行   </li>
-<li>输入ip地址，例如：<code>\\192.168.1.128</code>   </li>
-<li>输入刚创建好的samba账户密码即可</li>
-</ul>
+                <ol>
+<li><p><code>win+R</code>, 输入<code>regedit</code>打开注册表编辑器   </p>
+</li>
+<li><p>展开以下位置<code>HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\</code>   </p>
+</li>
+<li><p>右键点击<code>Windows</code>，新建<code>key</code>，命名为<code>CloudContent</code>   </p>
+</li>
+<li><p>选择<code>CloudContent</code>，在页面右边空白组点击鼠标右键，新建<code>DWORD(32位)值（D）</code>，命名为<code>DisableWindowsConsumerFeatures</code>   </p>
+</li>
+<li><p>双击打开<code>DisableWindowsConsumerFeatures</code>，在<code>data value</code>中输入数值<code>1</code>，确定保存。   </p>
+</li>
+<li><p>完成。</p>
+</li>
+</ol>
 
             </div>
             <hr/>
@@ -430,34 +430,20 @@ sudo smbpasswd -a 用户名   #注意：用户名必须是当前登录linux的�
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2019/09/15/linux-markdown-shi-yong-shuo-ming/">
+                <a href="/2019/09/15/linux-samba-shi-yong-shuo-ming/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Markdown 使用说明">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="Samba使用说明">
                         
-                        <span class="card-title">Markdown 使用说明</span>
+                        <span class="card-title">Samba使用说明</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            标题# 一级标题
-## 二级标题
-### 三级标题
-#### 四级标题
-##### 五级标题
-###### 六级标题段落
-换行   
-
-两个以上空格加回车   
-
-
-字体
-  普通文本
-  *斜体文本*
-  **粗体文本**
-  ***粗斜
+                            安装Sambasudo aptitude install samba
+sudo aptitude install samba-common配置sambasudo vim /etc/samba/smb.conf  # 配置samba在文件末尾
                         
                     </div>
                     <div class="publish-info">
@@ -483,12 +469,8 @@ sudo smbpasswd -a 用户名   #注意：用户名必须是当前登录linux的�
                         <span class="chip bg-color">Linux</span>
                     </a>
                     
-                    <a href="/tags/Markdown/" target="_blank">
-                        <span class="chip bg-color">Markdown</span>
-                    </a>
-                    
-                    <a href="/tags/Windows/" target="_blank">
-                        <span class="chip bg-color">Windows</span>
+                    <a href="/tags/Samba/" target="_blank">
+                        <span class="chip bg-color">Samba</span>
                     </a>
                     
                 </div>
@@ -502,24 +484,23 @@ sudo smbpasswd -a 用户名   #注意：用户名必须是当前登录linux的�
                 Next&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/09/14/windows-jin-zhi-win10-zi-dong-an-zhuang-ruan-jian/">
+                <a href="/2019/09/14/windows-chang-yong-ming-ling/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="禁止win10自动安装软件">
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="Windows常用命令（持续更新）">
                         
-                        <span class="card-title">禁止win10自动安装软件</span>
+                        <span class="card-title">Windows常用命令（持续更新）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-win+R, 输入regedit打开注册表编辑器   
+                            合并文件
+shift+rightclick, choose ‘open command window here’    
 
-展开以下位置HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\   
-
-右键点击Windows，新建key，命名为Clo
+Copying the command below    
+  for %f in (*.txt) do type 
                         
                     </div>
                     <div class="publish-info">

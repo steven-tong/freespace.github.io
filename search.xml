@@ -60,6 +60,31 @@
     
     
     <entry>
+      <title>禁止win10自动安装软件</title>
+      <link href="/2019/09/14/windows-jin-zhi-win10-zi-dong-an-zhuang-ruan-jian/"/>
+      <url>/2019/09/14/windows-jin-zhi-win10-zi-dong-an-zhuang-ruan-jian/</url>
+      
+        <content type="html"><![CDATA[<ol><li><p><code>win+R</code>, 输入<code>regedit</code>打开注册表编辑器   </p></li><li><p>展开以下位置<code>HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\</code>   </p></li><li><p>右键点击<code>Windows</code>，新建<code>key</code>，命名为<code>CloudContent</code>   </p></li><li><p>选择<code>CloudContent</code>，在页面右边空白组点击鼠标右键，新建<code>DWORD(32位)值（D）</code>，命名为<code>DisableWindowsConsumerFeatures</code>   </p></li><li><p>双击打开<code>DisableWindowsConsumerFeatures</code>，在<code>data value</code>中输入数值<code>1</code>，确定保存。   </p></li><li><p>完成。</p></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> Windows </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Windows </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Windows常用命令（持续更新）</title>
       <link href="/2019/09/14/windows-chang-yong-ming-ling/"/>
       <url>/2019/09/14/windows-chang-yong-ming-ling/</url>
