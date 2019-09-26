@@ -8,11 +8,15 @@
     <meta name="description" content="#一般说明
 
 字符集   
-英文26个字母，不区分大小写数字0-922个特殊符号:=+-*/(),.&amp;#39;!&amp;quot;%&amp;amp;;&amp;lt;&amp;gt;?$_空格
+
+英文26个字母，不区分大小写   
+数字0-9   
+22个特殊符号:=+-*/(),.&amp;#39;!&amp;quot;%&amp;amp;;&amp;lt;&amp;gt;?$_空格
+
 
 
 书面格式   
-Fortran程序以PROGRAM 程序名开始，以EN">
+Fortran程序以PROGRAM">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -380,28 +384,49 @@ Fortran程序以PROGRAM 程序名开始，以EN">
                 <p>#一般说明</p>
 <ol>
 <li>字符集   <blockquote>
-<p>英文26个字母，不区分大小写<br>数字0-9<br>22个特殊符号<code>:=+-*/(),.&#39;!&quot;%&amp;;&lt;&gt;?$_空格</code></p>
+<ul>
+<li>英文26个字母，不区分大小写   </li>
+<li>数字0-9   </li>
+<li>22个特殊符号<code>:=+-*/(),.&#39;!&quot;%&amp;;&lt;&gt;?$_空格</code></li>
+</ul>
 </blockquote>
 </li>
 <li>书面格式   <ul>
 <li>Fortran程序以<code>PROGRAM 程序名</code>开始，以<code>END</code>结束</li>
 <li>固定格式   <blockquote>
-<p>第1个字符，<code>C</code>或<code>c</code>或<code>*</code>,代表此行为注释<br>第1-5个字符，数字或空格，数字代表行号<br>第6个字符，<code>0</code>以外的任何字符代表此行承接上一行<br>第7-72个字符，代码正文<br>第73个字符以后，无效，自动忽略   </p>
+<ul>
+<li>第1个字符，<code>C</code>或<code>c</code>或<code>*</code>,代表此行为注释   </li>
+<li>第1-5个字符，数字或空格，数字代表行号   </li>
+<li>第6个字符，<code>0</code>以外的任何字符代表此行承接上一行   </li>
+<li>第7-72个字符，代码正文   </li>
+<li>第73个字符以后，无效，自动忽略   </li>
+</ul>
 </blockquote>
 </li>
 <li>自由格式   <blockquote>
-<p>叹号<code>!</code>以后均为注释<br>行号直接放到最前面<br>行尾或行首为符号<code>&amp;</code>，代表此行和下一行或上一行承接<br>每行可编写132个字符   </p>
+<ul>
+<li>叹号<code>!</code>以后均为注释   </li>
+<li>行号直接放到最前面   </li>
+<li>行尾或行首为符号<code>&amp;</code>，代表此行和下一行或上一行承接   </li>
+<li>每行可编写132个字符   </li>
+</ul>
 </blockquote>
 </li>
 </ul>
 </li>
 <li>数据类型   <ul>
 <li>整型   <blockquote>
-<p>长整型（4bytes）：-2147483648<del>+2147483647， 或-2E31+1</del>+2E31<br>短整型（2bytes）：-32768<del>+32767，或-2E15+1</del>2E15   </p>
+<ul>
+<li>长整型（4bytes）：-2147483648<del>+2147483647， 或-2E31+1</del>+2E31   </li>
+<li>短整型（2bytes）：-32768<del>+32767，或-2E15+1</del>2E15   </li>
+</ul>
 </blockquote>
 </li>
 <li>浮点型   <blockquote>
-<p>单精度（4bytes）：有效位数6-7位<br>双精度（8bytes）：有效位数15-16位   </p>
+<ul>
+<li>单精度（4bytes）：有效位数6-7位   </li>
+<li>双精度（8bytes）：有效位数15-16位   </li>
+</ul>
 </blockquote>
 </li>
 <li>复数   <blockquote>
@@ -443,7 +468,10 @@ Fortran程序以PROGRAM 程序名开始，以EN">
 <li>双精度   <pre><code>  real(kind=8) a    !Fortran90添加
   real*8 a   !Fortran77写法
   real(8) a   !Fortran77写法</code></pre><blockquote>
-<p>所有浮点数在计算机中均以科学计数法存储，单精度以<code>E</code>表示，双精度以<code>D</code>表示<br>不指定长度默认使用单精度   </p>
+<ul>
+<li>所有浮点数在计算机中均以科学计数法存储，单精度以<code>E</code>表示，双精度以<code>D</code>表示      </li>
+<li>不指定长度默认使用单精度   </li>
+</ul>
 </blockquote>
 </li>
 </ul>
@@ -510,7 +538,10 @@ Fortran程序以PROGRAM 程序名开始，以EN">
   implicit integer(a-f,i,k)  ！a到f，以及i和k开头的变量都是整型
   implicit real(a-m)   ！a到m开头的变量都是浮点型
   implicit none   ！关闭默认类型</code></pre><blockquote>
-<p>implicit命令必须放在所有声明之前<br>建议在所有程序中使用<code>implicit none</code>命令  </p>
+<ul>
+<li>implicit命令必须放在所有声明之前   </li>
+<li>建议在所有程序中使用<code>implicit none</code>命令  </li>
+</ul>
 </blockquote>
 </li>
 <li><p>常数声明   </p>
@@ -532,24 +563,28 @@ Fortran程序以PROGRAM 程序名开始，以EN">
 </ol>
 <h1 id="输入-输出"><a href="#输入-输出" class="headerlink" title="输入/输出"></a>输入/输出</h1><ol>
 <li><p>输入   </p>
-<pre><code> ```
- read(*,*) a   !读取变量a
- ```
- &gt; 括号内第一个参数为读取位置，星号为默认值，为键盘   
- &gt; 括号内第二个参数为读取格式，星号为默认   
- &gt; 执行完read，系统自动跳到下一行等待输入</code></pre></li>
+<pre><code> read(*,*) a   !读取变量a</code></pre><blockquote>
+<ul>
+<li>括号内第一个参数为读取位置，星号为默认值，为键盘   </li>
+<li>括号内第二个参数为读取格式，星号为默认   </li>
+<li>执行完read，系统自动跳到下一行等待输入</li>
+</ul>
+</blockquote>
+</li>
 <li><p>输出   </p>
-<pre><code> ```
- write(*,*) a   !输出变量a
- ```
- &gt; 括号内第一个参数为输出位置，星号为默认值，为屏幕   
- &gt; 括号内第二个参数为输出格式，星号为默认   
- &gt; 执行完write，系统自动跳到下一行等待输出   </code></pre></li>
+<pre><code> write(*,*) a   !输出变量a</code></pre><blockquote>
+<ul>
+<li>括号内第一个参数为输出位置，星号为默认值，为屏幕   </li>
+<li>括号内第二个参数为输出格式，星号为默认   </li>
+<li>执行完write，系统自动跳到下一行等待输出   </li>
+</ul>
+</blockquote>
+</li>
 <li><p>格式化输入输出   </p>
 <pre><code> write(*,100) a,b,c,d,e,f,g   !以行号为100的行中设定的格式输出变量a到屏幕
- 100 format(f15.10,2x,3(f15.10),2x,I4,2x,2(f15.10))
+ 100 format(f15.10, 2x, 3(f15.10), 2x, I4, 2x, 2(f15.10))
 
- write(*,&quot;(f15.10,2x,3(f15.10),2x,I4,2x,2(f15.10))&quot;) a   !直接将格式写在write命令里</code></pre></li>
+ write(*,&quot;(f15.10, 2x, 3(f15.10), 2x, I4, 2x, 2(f15.10))&quot;) a   !直接将格式写在write命令里</code></pre></li>
 <li><p>常用输入输出格式   </p>
 <pre><code> Iw[.m]   !以w个字符输出整数，至少输出m个数字，m可省略
 
@@ -581,12 +616,25 @@ Fortran程序以PROGRAM 程序名开始，以EN">
 <li><p>打开文件   </p>
 <blockquote>
 <p>Fortran可以操作文本文件与二进制文件，访问方式又顺序访问与直接访问两种   </p>
-<pre><code> open(unit=number,file=&#39;filename&#39;,form=&#39;&#39;,access=&#39;&#39;,recngth,blank=&#39;&#39;)</code></pre><p>正整数number代表文件代号，用来带起read、write命令中的输入输出位置（注意：避免使用1/2/5/6，2/6是默认输出屏幕位置，1/5是默认输入键盘位）<br>‘filename’为打开的文件名，可以带路径<br>form代表文件类型，=‘formated’代表文本文件，=‘unformated’代表二进制文件，默认为文本文件<br>access代表文件访问方式，=‘sequential’代表顺序访问，=‘direct’代表直接访问，默认为顺序访问<br>length在顺序访问时代表一次读写数据的最大容量，在直接访问时代表每个模块的分区长度。length在文本文件下单位为1byte，在二进制格式下又编译器指定。<br>blank代表输入数字时，格式字段中的空格代表的意义，=‘null’时代表没有东西，=‘zero’时会自动以0代入。默认为=‘zero’<br>更多参数可以参考相关书籍，这里只是常用参数。   </p>
+<pre><code> open(unit=number, file=&#39;filename&#39;, form=&#39;&#39;, access=&#39;&#39;, rec=length, blank=&#39;&#39;)</code></pre><ul>
+<li>正整数number代表文件代号，用来带起read、write命令中的输入输出位置（注意：避免使用1/2/5/6，2/6是默认输出屏幕位置，1/5是默认输入键盘位）   </li>
+<li>‘filename’为打开的文件名，可以带路径   </li>
+<li>form代表文件类型，=‘formated’代表文本文件，=‘unformated’代表二进制文件，默认为文本文件     </li>
+<li>access代表文件访问方式，=‘sequential’代表顺序访问，=‘direct’代表直接访问，默认为顺序访问   </li>
+<li>length在顺序访问时代表一次读写数据的最大容量，在直接访问时代表每个模块的分区长度。length在文本文件下单位为1byte，在二进制格式下又编译器指定。   </li>
+<li>blank代表输入数字时，格式字段中的空格代表的意义，=‘null’时代表没有东西，=‘zero’时会自动以0代入。默认为=‘zero’      </li>
+</ul>
 </blockquote>
 </li>
 <li><p>读写文件   </p>
-<pre><code> write/read(unit=number,fmt=format,nml=namelist,rec=record,advance=‘’)</code></pre><blockquote>
-<p>number用来指定输入输出位置<br>format指定输入输出格式<br>namelist指定需要读写的namelist<br>record指定在直接访问文件时要读写的文件位置<br>advance为Fortran90新增，代表命令执行完毕后，读写位置是否自动向下移动一行，=‘yes’代表移动，为默认状态，=‘no’代表不移动   </p>
+<pre><code> write/read(unit=number, fmt=format, nml=namelist, rec=record, advance=&#39;&#39;)</code></pre><blockquote>
+<ul>
+<li>number用来指定输入输出位置   </li>
+<li>format指定输入输出格式   </li>
+<li>namelist指定需要读写的namelist    </li>
+<li>record指定在直接访问文件时要读写的文件位置   </li>
+<li>advance为Fortran90新增，代表命令执行完毕后，读写位置是否自动向下移动一行，=‘yes’代表移动，为默认状态，=‘no’代表不移动   </li>
+</ul>
 </blockquote>
 </li>
 <li><p>NAMELIST   </p>
@@ -656,11 +704,15 @@ Fortran程序以PROGRAM 程序名开始，以EN">
                             #一般说明
 
 字符集   
-英文26个字母，不区分大小写数字0-922个特殊符号:=+-*/(),.&#39;!&quot;%&amp;;&lt;&gt;?$_空格
+
+英文26个字母，不区分大小写   
+数字0-9   
+22个特殊符号:=+-*/(),.&#39;!&quot;%&amp;;&lt;&gt;?$_空格
+
 
 
 书面格式   
-Fortran程序以PROGRAM 程序名开始，以EN
+Fortran程序以PROGRAM
                         
                     </div>
                     <div class="publish-info">
