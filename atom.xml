@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://steven-tong.github.io/"/>
-  <updated>2019-09-16T01:55:52.000Z</updated>
+  <updated>2019-09-26T13:15:34.000Z</updated>
   <id>https://steven-tong.github.io/</id>
   
   <author>
@@ -15,6 +15,67 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Fortran 语法简易说明</title>
+    <link href="https://steven-tong.github.io/2019/09/25/fortran-yu-fa-jian-yi-shuo-ming/"/>
+    <id>https://steven-tong.github.io/2019/09/25/fortran-yu-fa-jian-yi-shuo-ming/</id>
+    <published>2019-09-25T14:58:25.000Z</published>
+    <updated>2019-09-26T13:15:34.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;#一般说明&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;字符集  
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Fortran" scheme="https://steven-tong.github.io/categories/Fortran/"/>
+    
+    
+      <category term="Fortran" scheme="https://steven-tong.github.io/tags/Fortran/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git使用说明</title>
+    <link href="https://steven-tong.github.io/2019/09/24/linux-git-shi-yong-shuo-ming/"/>
+    <id>https://steven-tong.github.io/2019/09/24/linux-git-shi-yong-shuo-ming/</id>
+    <published>2019-09-24T16:45:12.000Z</published>
+    <updated>2019-09-24T19:20:54.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Git-配置&quot;&gt;&lt;a href=&quot;#Git-配置&quot; class=&quot;headerlink&quot; title=&quot;Git 配置&quot;&gt;&lt;/a&gt;Git 配置&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;配置工具&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;使用&lt;code&gt;git
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Linux" scheme="https://steven-tong.github.io/categories/Linux/"/>
+    
+    
+      <category term="Linux" scheme="https://steven-tong.github.io/tags/Linux/"/>
+    
+      <category term="Git" scheme="https://steven-tong.github.io/tags/Git/"/>
+    
+  </entry>
   
   <entry>
     <title>Markdown 使用说明</title>
@@ -259,7 +320,7 @@ sudo aptitude
     <link href="https://steven-tong.github.io/2019/09/13/linux-sublime-text-3-shi-yong-shuo-ming/"/>
     <id>https://steven-tong.github.io/2019/09/13/linux-sublime-text-3-shi-yong-shuo-ming/</id>
     <published>2019-09-13T14:38:48.000Z</published>
-    <updated>2019-09-14T13:41:33.000Z</updated>
+    <updated>2019-09-26T11:58:30.000Z</updated>
     
     <summary type="html">
     
@@ -370,35 +431,6 @@ vim ~/.vimrc.bundles
       <category term="Linux" scheme="https://steven-tong.github.io/tags/Linux/"/>
     
       <category term="Hexo" scheme="https://steven-tong.github.io/tags/Hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Git使用说明</title>
-    <link href="https://steven-tong.github.io/2019/09/12/linux-git-shi-yong-shuo-ming/"/>
-    <id>https://steven-tong.github.io/2019/09/12/linux-git-shi-yong-shuo-ming/</id>
-    <published>2019-09-12T16:45:12.000Z</published>
-    <updated>2019-09-14T13:41:33.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;链接github&quot;&gt;&lt;a href=&quot;#链接github&quot; class=&quot;headerlink&quot; title=&quot;链接github&quot;&gt;&lt;/a&gt;链接github&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;git config --global user.name
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Linux" scheme="https://steven-tong.github.io/categories/Linux/"/>
-    
-    
-      <category term="Linux" scheme="https://steven-tong.github.io/tags/Linux/"/>
-    
-      <category term="Git" scheme="https://steven-tong.github.io/tags/Git/"/>
     
   </entry>
   
