@@ -4,14 +4,20 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Git使用说明, Technique">
-    <meta name="description" content="Git 配置
-配置工具
+    <meta name="keywords" content="Linux下制作系统启动盘, Technique">
+    <meta name="description" content="
+准备工作   
 
-使用git config进行配置
-使用--system选项配置/etc/gitconfig文件，适用于所有用户
-使用--global选项配置~/.gitconfig文件，适用于当前用户
-不使用任何选项，则配置当前项">
+
+插入U盘   
+查看U盘设备名称   ```
+sudo fdisk -l
+```
+卸载U盘，例如：```
+umount /dev/sdb
+```
+格式化U盘   ```
+mkfs.ntfs /dev/sdb1 -I (">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -19,7 +25,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Git使用说明 | EX-Technique</title>
+    <title>Linux下制作系统启动盘 | EX-Technique</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -205,13 +211,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        Git使用说明
+                        Linux下制作系统启动盘
                     </div>
                 </div>
             </div>
@@ -326,10 +332,6 @@
                                 <span class="chip bg-color">Linux</span>
                             </a>
                         
-                            <a href="/tags/Git/" target="_blank">
-                                <span class="chip bg-color">Git</span>
-                            </a>
-                        
                     </div>
                     
                 </div>
@@ -350,21 +352,21 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2019-09-24
+                    2019-09-30
                 </div>
 
                 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>Word Count:&nbsp;&nbsp;
-                        1.3k
+                        128
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>Read Times:&nbsp;&nbsp;
-                        5 Min
+                        1 Min
                     </div>
                     
                 
@@ -380,132 +382,43 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Git-配置"><a href="#Git-配置" class="headerlink" title="Git 配置"></a>Git 配置</h1><ol>
-<li><p>配置工具</p>
+                <ul>
+<li><p>准备工作   </p>
+<blockquote>
 <ul>
-<li>使用<code>git config</code>进行配置</li>
-<li>使用<code>--system</code>选项配置<code>/etc/gitconfig</code>文件，适用于所有用户</li>
-<li>使用<code>--global</code>选项配置<code>~/.gitconfig</code>文件，适用于当前用户</li>
-<li>不使用任何选项，则配置当前项目目录中的<code>.git/config</code>文件，适用于当前项目</li>
+<li>插入U盘   </li>
+<li>查看U盘设备名称   <pre><code>```
+sudo fdisk -l
+```</code></pre></li>
+<li>卸载U盘，例如：<pre><code>```
+umount /dev/sdb
+```</code></pre></li>
+<li>格式化U盘   <pre><code>```
+mkfs.ntfs /dev/sdb1 -I (NTFS分区)
+mkfs.vfat /dev/sdb1 -I (fat32分区)
+mkfs.ext4 /dev/sdb1 -I (Linux分区)
+```</code></pre></li>
 </ul>
-</li>
-<li><p>配置个人用户信息</p>
-<pre><code> git config --global user.name &quot;用户名&quot;     #设置用户名
- git config --global user.email &quot;邮箱&quot;      #设置邮箱</code></pre></li>
-<li><p>配置默认文本编辑器</p>
-<pre><code> git config --global core.editor vim</code></pre></li>
-<li><p>配置差异分析工具</p>
-<pre><code> git config --global merge.tool vimdiff</code></pre><blockquote>
-<p>可选择的有kdiff3, tkdiff, meld, xxdiff, emerge, vimdiff, gvimdiff, ecmerge, opendiff等</p>
 </blockquote>
 </li>
-<li><p>查看配置信息</p>
-<pre><code>git config --list</code></pre><blockquote>
-<p>重复的变量名说明来自不同的配置文件，以最后一个为准</p>
-</blockquote>
+<li><p>制作U盘启动盘   </p>
+<blockquote>
+<p><code>dd if=镜像目录 of=设备</code></p>
+<pre><code>  ```
+  sudo dd if=ubuntu-13.10-desktop-i386.iso  of=/dev/sdb status=progress 
+  ```</code></pre></blockquote>
 </li>
-</ol>
-<h1 id="创建Git仓库"><a href="#创建Git仓库" class="headerlink" title="创建Git仓库"></a>创建Git仓库</h1><ol>
-<li>创建本地仓库<pre><code> git init #以当前目录作为Git仓库
- git init newrepo #以newrepo目录作为Git仓库</code></pre></li>
-<li>克隆远程仓库到本地<pre><code> git clone &lt;repo&gt; &lt;local directory&gt; # 克隆repo到本地目录，省略本地目录则克隆到当前目录</code></pre><blockquote>
-<p>远程repo的三种写法(SSH协议速度最快)</p>
-<pre><code> git clone git@github.com:schacon/grit.git    #SSH协议
- git clone git://github.com/schacon/grit.git   #GIT协议
- git clone https://github.com/schacon/grit.git   #HTTPS协议</code></pre></blockquote>
+<li><p>引申应用   </p>
+<blockquote>
+<p>制作 CD/DVD 系统盘</p>
+<pre><code>  ```
+  sudo dd if=ubuntu-13.10-desktop-i386.iso  of=/dev/cdrom status=progress 
+  ```</code></pre><p>制作镜像</p>
+<pre><code>  ```
+  sudo dd if=/dev/cdrom of=/home/username/cd.iso status=progress 
+  ```</code></pre></blockquote>
 </li>
-</ol>
-<h1 id="Git基本操作"><a href="#Git基本操作" class="headerlink" title="Git基本操作"></a>Git基本操作</h1><ol>
-<li>添加文件到缓存<pre><code> git add &lt;文件1&gt; &lt;文件2&gt; &lt;文件3&gt;
- git add .   #添加所有新增和修改到缓存，忽略删除文件操作
- git add -u   #添加所有删除和修改到缓存，忽略新增文件操作
- git add -A   #添加所有新增、修改和删除到缓存，忽略删除文件操作</code></pre></li>
-<li>提交缓存区内容到仓库<pre><code> git commit -m &#39;提交信息&#39;
- git commit -am &#39;提交信息&#39;   #跳过添加缓存，直接提交文件</code></pre></li>
-<li>查看状态<pre><code> git status
- git status -s   #以简短结果输出</code></pre></li>
-<li>查看缓存改动<pre><code> git diff   #查看尚未缓存的改动
- git diff --cached   #查看已缓存的改动
- git diff HEAD   #查看尚未缓存与已缓存的所有改动
- git diff --stat   #仅显示摘要</code></pre></li>
-<li>取消已缓存内容<pre><code> git reset HEAD &lt;file name&gt;</code></pre></li>
-<li>移除文件<pre><code> git rm &lt;file name&gt;   #移除未缓存本地文件
- git rm -f &lt;file name&gt;   #移除已缓存的本地文件
- git rm --cached &lt;file name&gt;   #仅从缓存区移除文件（保留本地文件）
- git rm -r &lt;directory name&gt;   #递归删除目录</code></pre></li>
-<li>移动/重命名文件<pre><code> git mv &lt;file name&gt; &lt;new neme/directory&gt;</code></pre></li>
-</ol>
-<h1 id="Git分支管理"><a href="#Git分支管理" class="headerlink" title="Git分支管理"></a>Git分支管理</h1><pre><code>```
-git branch &lt;branch name&gt;   #创建本地分支
-
-git branch   #查看本地分支
-
-git checkout &lt;branch name&gt;   #切换本地分支
-
-git checkout -b &lt;branch name&gt;   #创建并立即切换到新分支
-
-git checkout -d &lt;branch name&gt;   #删除分支
-
-git merge &lt;branch name&gt;   #将选定分支合并到当前分支
-```</code></pre><h1 id="查看Git提交历史"><a href="#查看Git提交历史" class="headerlink" title="查看Git提交历史"></a>查看Git提交历史</h1><pre><code>```
-git log
-
-git log --oneline   #查看简洁版历史记录
-
-git log --graph   #以拓扑图形式查看历史记录
-
-git log --reverse   #逆向查看历史记录
-
-git log --author   #查看指定用户的提交记录
-
-git log --since(or --before, --until, --after)={3.weeks.ago    (or 2019-04-31)}   #指定日期查看
-
-git log --no-merges   #隐藏合并提交
-```</code></pre><blockquote>
-<p>多个命令可以一起使用，例如：<br>    <code>git log --reverse --oneline</code></p>
-</blockquote>
-<h1 id="Git标签"><a href="#Git标签" class="headerlink" title="Git标签"></a>Git标签</h1><pre><code>```
-git tag -a &lt;tag name&gt;   #创建标签
-
-git tag -a &lt;tag name&gt; -m &lt;tag information&gt;   #创建带注解的标签
-
-git tag -a &lt;tag name&gt; &lt;commit number&gt;   #追加标签
-
-git tag   #列出所有标签
-
-git tag -s &lt;tag name&gt; -m &lt;tag information&gt;   #PGP签名标签
-
-git tag -d &lt;tag name&gt;   #删除标签
-
-git show &lt;tag name&gt;   #查看某标签对应版本的修改内容
-```</code></pre><h1 id="Git远程仓库（以Github为例）"><a href="#Git远程仓库（以Github为例）" class="headerlink" title="Git远程仓库（以Github为例）"></a>Git远程仓库（以Github为例）</h1><ol>
-<li><p>链接github   </p>
-<pre><code> ssh-keygen -t rsa -C &quot;github注册邮箱&quot;   #生成SSH Key</code></pre><blockquote>
-<p>进入<code>~/.ssh</code>文件夹，打开<code>id_rsa.pub</code>文件，复制里面的SSH public key到github网站</p>
-<pre><code> ssh -T git@github.com   #验证是否链接成功</code></pre></blockquote>
-</li>
-<li><p>查看当前远程库</p>
-<pre><code> git remote
- git remote -v   #显示每个别名的实际链接地址</code></pre></li>
-<li><p>提取远程仓库</p>
-<pre><code> git fetch &lt;远程库&gt; &lt;branch name&gt; #从指定远程库中拉取指定分支，拉取下来的分支名为&lt;远程库/分支名&gt;
-
- git merge &lt;远程库/分支名&gt;   #将拉取下来的分支合并到当前分支
-
- git checkout -d &lt;远程库/分支名&gt;   #删除拉取下来的分支</code></pre><blockquote>
-<p>上述步骤可以简化成下面一步：</p>
-<pre><code> git pull &lt;远程库&gt; &lt;branch name&gt;   #将远程库中的指定分支拉取并与本地当前分支合并</code></pre></blockquote>
-<p> git pull &lt;远程库&gt; &lt;远程分支名&gt;:&lt;本地分支名&gt;   #将远程库中的指定分支拉取并与指定本地分支合并<br> ```</p>
-</li>
-<li><p>推送本地分支到远程仓库</p>
-<pre><code> git push &lt;远程库&gt; &lt;branch name&gt;   #将指定的本地分支推送到指定远程库中的同名分支
-
- git push &lt;远程库&gt; &lt;本地分支名&gt;:&lt;远程分支名&gt;   #将指定的本地分支推送到指定远程库中的指定分支</code></pre></li>
-<li><p>添加远程库   </p>
-<pre><code> git remote add &lt;远程库&gt; &lt;url&gt;</code></pre></li>
-<li><p>删除远程仓库   </p>
-<pre><code> git remote rm &lt;远程库&gt;</code></pre></li>
-</ol>
+</ul>
 
             </div>
             <hr/>
@@ -543,9 +456,72 @@ git show &lt;tag name&gt;   #查看某标签对应版本的修改内容
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;Current
+            </div>
+            <div class="card">
+                <a href="/2019/09/30/linux-zhi-zuo-xi-tong-qi-dong-pan/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="Linux下制作系统启动盘">
+                        
+                        <span class="card-title">Linux下制作系统启动盘</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+准备工作   
+
+
+插入U盘   
+查看U盘设备名称   ```
+sudo fdisk -l
+```
+卸载U盘，例如：```
+umount /dev/sdb
+```
+格式化U盘   ```
+mkfs.ntfs /dev/sdb1 -I (
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-09-30
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Linux/" class="post-category" target="_blank">
+                                    Linux
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Linux/" target="_blank">
+                        <span class="chip bg-color">Linux</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fa fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/2019/09/25/fortran-yu-fa-jian-yi-shuo-ming/">
                     <div class="card-image">
@@ -573,9 +549,9 @@ Fortran程序以PROGRAM 程
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-09-25
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-09-25
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -593,78 +569,6 @@ Fortran程序以PROGRAM 程
                     
                     <a href="/tags/Fortran/" target="_blank">
                         <span class="chip bg-color">Fortran</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                Next&nbsp;<i class="fa fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2019/09/15/linux-markdown-shi-yong-shuo-ming/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Markdown 使用说明">
-                        
-                        <span class="card-title">Markdown 使用说明</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            标题# 一级标题
-## 二级标题
-### 三级标题
-#### 四级标题
-##### 五级标题
-###### 六级标题段落
-换行   
-
-两个以上空格加回车   
-
-
-字体
-  普通文本
-  *斜体文本*
-  **粗体文本**
-  ***粗斜
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-09-15
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fa fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/Linux/" class="post-category" target="_blank">
-                                    Linux
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/Linux/" target="_blank">
-                        <span class="chip bg-color">Linux</span>
-                    </a>
-                    
-                    <a href="/tags/Markdown/" target="_blank">
-                        <span class="chip bg-color">Markdown</span>
-                    </a>
-                    
-                    <a href="/tags/Windows/" target="_blank">
-                        <span class="chip bg-color">Windows</span>
                     </a>
                     
                 </div>

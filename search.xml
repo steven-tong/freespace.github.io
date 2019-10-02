@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Linux下制作系统启动盘</title>
+      <link href="/2019/09/30/linux-zhi-zuo-xi-tong-qi-dong-pan/"/>
+      <url>/2019/09/30/linux-zhi-zuo-xi-tong-qi-dong-pan/</url>
+      
+        <content type="html"><![CDATA[<ul><li><p>准备工作   </p><blockquote><ul><li>插入U盘   </li><li>查看U盘设备名称   <pre><code>```sudo fdisk -l```</code></pre></li><li>卸载U盘，例如：<pre><code>```umount /dev/sdb```</code></pre></li><li>格式化U盘   <pre><code>```mkfs.ntfs /dev/sdb1 -I (NTFS分区)mkfs.vfat /dev/sdb1 -I (fat32分区)mkfs.ext4 /dev/sdb1 -I (Linux分区)```</code></pre></li></ul></blockquote></li><li><p>制作U盘启动盘   </p><blockquote><p><code>dd if=镜像目录 of=设备</code></p><pre><code>  ```  sudo dd if=ubuntu-13.10-desktop-i386.iso  of=/dev/sdb status=progress   ```</code></pre></blockquote></li><li><p>引申应用   </p><blockquote><p>制作 CD/DVD 系统盘</p><pre><code>  ```  sudo dd if=ubuntu-13.10-desktop-i386.iso  of=/dev/cdrom status=progress   ```</code></pre><p>制作镜像</p><pre><code>  ```  sudo dd if=/dev/cdrom of=/home/username/cd.iso status=progress   ```</code></pre></blockquote></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> Linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Fortran 语法简易说明</title>
       <link href="/2019/09/25/fortran-yu-fa-jian-yi-shuo-ming/"/>
       <url>/2019/09/25/fortran-yu-fa-jian-yi-shuo-ming/</url>
