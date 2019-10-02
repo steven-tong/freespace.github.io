@@ -352,14 +352,14 @@ sudo aptitude install samba-common配置sambasudo vim /etc/samba/smb.conf  # 配
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>Word Count:&nbsp;&nbsp;
-                        140
+                        529
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>Read Times:&nbsp;&nbsp;
-                        1 Min
+                        2 Min
                     </div>
                     
                 
@@ -384,11 +384,57 @@ sudo aptitude install samba-common</code></pre><h1 id="配置samba"><a href="#�
    #public = yes
    writable = yes</code></pre><p>保存退出</p>
 <h1 id="创建samba账户"><a href="#创建samba账户" class="headerlink" title="创建samba账户"></a>创建samba账户</h1><pre><code>sudo touch /etc/samba/smbpasswd
-sudo smbpasswd -a 用户名   #注意：用户名必须是当前登录linux的用户名</code></pre><h1 id="重启samba"><a href="#重启samba" class="headerlink" title="重启samba"></a>重启samba</h1><pre><code>sudo /etc/init.d/smbd restart</code></pre><h1 id="Windows端设置"><a href="#Windows端设置" class="headerlink" title="Windows端设置"></a>Windows端设置</h1><ul>
+sudo smbpasswd -a 用户名   #注意：用户名必须是当前登录linux的用户名</code></pre><h1 id="重启samba"><a href="#重启samba" class="headerlink" title="重启samba"></a>重启samba</h1><pre><code>sudo /etc/init.d/smbd restart</code></pre><h1 id="Windows端访问设置"><a href="#Windows端访问设置" class="headerlink" title="Windows端访问设置"></a>Windows端访问设置</h1><ul>
 <li>win+R调出运行   </li>
 <li>输入ip地址，例如：<code>\\192.168.1.128</code>   </li>
 <li>输入刚创建好的samba账户密码即可</li>
 </ul>
+<h1 id="Linux端访问设置"><a href="#Linux端访问设置" class="headerlink" title="Linux端访问设置"></a>Linux端访问设置</h1><ol>
+<li><p>终端访问   </p>
+<ul>
+<li><p>安装smbclient   </p>
+<pre><code>  sudo aptitude install smbclient</code></pre></li>
+<li><p>查看服务器上的共享资料   </p>
+<pre><code>  smbclient -L //服务器IP/共享目录名称 -U Samba用户名 </code></pre></li>
+<li><p>登录samba服务器      </p>
+<pre><code>  smbclient //服务器IP/共享目录名称 -U Samba用户名</code></pre></li>
+<li><p>成功后出现提示符<code>smb:\&gt;</code>，就可以开始下面的操作    </p>
+<pre><code>  ?或help [command]         提供关于帮助或某个命令的帮助 
+
+  ![shell command]        执行所用的SHELL命令，或让用户进入 SHELL提示符 
+
+  cd [目录]          切换到服务器端的指定目录，如未指定，则 smbclient 返回当前本地目录 
+
+  lcd [目录]          切换到客户端指定的目录
+
+  dir 或ls          列出当前目录下的文件
+
+  exit 或quit          退出smbclient 
+
+  get file1 file2          从服务器上下载file1，并以文件名file2存在本地机上；如果不想改名，可以把file2省略 
+
+  mget file1 file2 file3 filen          从服务器上下载多个文件 
+
+  md或mkdir          目录 在服务器上创建目录 
+
+  rd或rmdir          目录 删除服务器上的目录 
+
+  put file1 [file2]          向服务器上传一个文件file1,传到服务器上改名为file2 
+
+  mput file1 file2 filen          向服务器上传多个文件</code></pre></li>
+</ul>
+</li>
+<li><p>图形端访问   </p>
+<ul>
+<li>安装cifs   <pre><code>  sudo aptitude install cifs-utils</code></pre></li>
+<li>挂载共享目录到本地   <pre><code>  mount -t cifs -o username=xxx,password=xxx //服务器IP/共享目录名称 /home/挂载目录</code></pre></li>
+<li>开机自动挂载<blockquote>
+<p>root身份编辑<code>/etc/fstab</code>，加入如下代码   </p>
+<pre><code>  //服务器IP/共享目录名称 /home/挂载目录 cifs username=xxx,password=xxx 0 0</code></pre></blockquote>
+</li>
+</ul>
+</li>
+</ol>
 
             </div>
             <hr/>
@@ -699,7 +745,7 @@ Copying the command below
             <br>
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">7.8k</span>&nbsp;字
+                class="white-color">8.2k</span>&nbsp;字
             
             
             
