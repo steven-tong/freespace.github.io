@@ -350,7 +350,7 @@ Compresstar   -jcvf   /.../*.tar.bz2   /home/do">
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>Word Count:&nbsp;&nbsp;
-                        89
+                        229
                     </div>
                     
 
@@ -391,6 +391,37 @@ dd   if=/.../sda3.bak    of=/dev/sda3</code></pre></li>
 <li>Mount<pre><code>mount   -o   codepage=936,iocharset=cp936   -t   ntfs   /dev/sda3   /home/temount
 mount   -o   loop   -t   iso9660   /.../*.iso   /home/temount</code></pre></li>
 <li>Unmount<br><code>umount   /home/temount/</code></li>
+</ul>
+<h1 id="改变环境变量"><a href="#改变环境变量" class="headerlink" title="改变环境变量"></a>改变环境变量</h1><ul>
+<li><p>查看PATH值   </p>
+<pre><code>  export</code></pre></li>
+<li><p>单独查看PATH环境变量   </p>
+<pre><code>  echo $PATH</code></pre></li>
+<li><p>临时添加PATH环境变量   </p>
+<pre><code>  export PATH=/home/directory:$PATH</code></pre></li>
+<li><p>永久添加环境变量(影响当前用户)   </p>
+<blockquote>
+<p>打开主目录下的<code>bashrc</code>文件 （zsh用户打开zshrc文件）   </p>
+<pre><code>  ```
+  vim ~/.bashrc
+  ```</code></pre><p>追加以下命令到文件末尾   </p>
+<pre><code>  ```
+  export PATH=&quot;/home/directory:$PATH&quot;
+  ```</code></pre></blockquote>
+</li>
+<li><p>永久添加环境变量(影响所有用户)    </p>
+<blockquote>
+<p>打开etc目录下的<code>profile</code>文件   </p>
+<pre><code>  ```
+  vim /etc/profile
+  ```</code></pre><p>追加以下命令到文件末尾   </p>
+<pre><code>  ```
+  export PATH=&quot;/home/directory:$PATH&quot;
+  ```</code></pre><p>更新配置文件    </p>
+<pre><code>  ```
+  source /etc/profile
+  ```   </code></pre></blockquote>
+</li>
 </ul>
 
             </div>
@@ -691,7 +722,7 @@ mkdir ~/.vim    &quot;插件安装目录插件管理工具vundle安装、配置�
             <br>
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">8.2k</span>&nbsp;字
+                class="white-color">8.4k</span>&nbsp;字
             
             
             
