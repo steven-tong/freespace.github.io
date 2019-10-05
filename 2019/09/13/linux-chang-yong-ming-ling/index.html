@@ -402,25 +402,15 @@ mount   -o   loop   -t   iso9660   /.../*.iso   /home/temount</code></pre></li>
 <li><p>永久添加环境变量(影响当前用户)   </p>
 <blockquote>
 <p>打开主目录下的<code>bashrc</code>文件 （zsh用户打开zshrc文件）   </p>
-<pre><code>  ```
-  vim ~/.bashrc
-  ```</code></pre><p>追加以下命令到文件末尾   </p>
-<pre><code>  ```
-  export PATH=&quot;/home/directory:$PATH&quot;
-  ```</code></pre></blockquote>
+<pre><code>  vim ~/.bashrc</code></pre><p>追加以下命令到文件末尾   </p>
+<pre><code>  export PATH=&quot;/home/directory:$PATH&quot;</code></pre></blockquote>
 </li>
 <li><p>永久添加环境变量(影响所有用户)    </p>
 <blockquote>
 <p>打开etc目录下的<code>profile</code>文件   </p>
-<pre><code>  ```
-  vim /etc/profile
-  ```</code></pre><p>追加以下命令到文件末尾   </p>
-<pre><code>  ```
-  export PATH=&quot;/home/directory:$PATH&quot;
-  ```</code></pre><p>更新配置文件    </p>
-<pre><code>  ```
-  source /etc/profile
-  ```   </code></pre></blockquote>
+<pre><code>  vim /etc/profile</code></pre><p>追加以下命令到文件末尾   </p>
+<pre><code>  export PATH=&quot;/home/directory:$PATH&quot;</code></pre><p>更新配置文件    </p>
+<pre><code>  source /etc/profile</code></pre></blockquote>
 </li>
 </ul>
 
