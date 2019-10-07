@@ -357,14 +357,14 @@ Fortran程序以PROGRAM 程">
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>Word Count:&nbsp;&nbsp;
-                        2.4k
+                        3.6k
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>Read Times:&nbsp;&nbsp;
-                        9 Min
+                        14 Min
                     </div>
                     
                 
@@ -799,6 +799,131 @@ Fortran程序以PROGRAM 程">
 </ul>
 </li>
 </ol>
+<h1 id="循环"><a href="#循环" class="headerlink" title="循环"></a>循环</h1><ol>
+<li>语法结构   <ul>
+<li>DO语句   <pre class="line-numbers language-fortran"><code class="language-fortran">  <span class="token keyword">do</span> counter<span class="token operator">=</span>startNUM<span class="token punctuation">,</span> endNUM<span class="token punctuation">,</span> increment   <span class="token comment" spellcheck="true">!依次指明计数器起始值，终止值，步长，步长省略时默认为1</span>
+      ...                <span class="token comment" spellcheck="true">!counter&lt;=endNUM时，运行此程序段</span>
+  <span class="token keyword">end do</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+</li>
+<li>DO WHILE语句   <pre class="line-numbers language-fortran"><code class="language-fortran">  <span class="token keyword">do</span> <span class="token keyword">while</span> <span class="token punctuation">(</span>Condition<span class="token punctuation">)</span>
+      ...                <span class="token comment" spellcheck="true">!Condition成立时，执行此程序段</span>
+  <span class="token keyword">end do</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+</li>
+</ul>
+</li>
+<li>循环的流程控制   <ul>
+<li>Cycle, Exit语句   <blockquote>
+<ul>
+<li>程序执行到cycle时自动跳过其后的程序代码，直接执行下一次循环   </li>
+<li>程序执行到exit时自动跳出循环，继续执行循环后的程序代码       </li>
+</ul>
+</blockquote>
+</li>
+<li>署名的循环   <pre class="line-numbers language-fortran"><code class="language-fortran">  loop1<span class="token punctuation">:</span> <span class="token keyword">do</span> i<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">3</span>    <span class="token comment" spellcheck="true">!署名外层循环为loop1</span>
+      loop2<span class="token punctuation">:</span> <span class="token keyword">do</span> j<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">3</span>    <span class="token comment" spellcheck="true">!署名内层循环为loop2</span>
+          <span class="token keyword">if</span> <span class="token punctuation">(</span>i<span class="token operator">==</span><span class="token number">3</span><span class="token punctuation">)</span> <span class="token keyword">exit</span> loop1   <span class="token comment" spellcheck="true">!跳出loop1</span>
+          <span class="token keyword">if</span> <span class="token punctuation">(</span>j<span class="token operator">==</span><span class="token number">2</span><span class="token punctuation">)</span> <span class="token keyword">cycle</span> loop2   <span class="token comment" spellcheck="true">!重做loop2</span>
+      <span class="token keyword">end do</span> loop2   <span class="token comment" spellcheck="true">!结束外层循环loop1</span>
+  <span class="token keyword">end do</span> loop1   <span class="token comment" spellcheck="true">!结束内层循环loop2</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+</ul>
+</li>
+</ol>
+<h1 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h1><ol>
+<li><p>数组声明   </p>
+<pre class="line-numbers language-fortran"><code class="language-fortran"> datatype name<span class="token punctuation">(</span>size1<span class="token punctuation">,</span>size2<span class="token punctuation">,</span>size3<span class="token punctuation">)</span>   <span class="token comment" spellcheck="true">!定义三维数组，数组编号默认从1开始</span>
+
+ datatype name<span class="token punctuation">(</span>num1<span class="token punctuation">:</span>num2<span class="token punctuation">)</span>   <span class="token comment" spellcheck="true">!定义一维数组编号起始于num1，终止与num2</span>
+
+ datatype<span class="token punctuation">,</span><span class="token keyword">allocatable</span> <span class="token operator">::</span> name<span class="token punctuation">(</span><span class="token punctuation">:</span><span class="token punctuation">)</span>   <span class="token comment" spellcheck="true">!定义可变大小一维数组name</span>
+ <span class="token keyword">allocate</span><span class="token punctuation">(</span>name<span class="token punctuation">(</span>num<span class="token punctuation">)</span><span class="token punctuation">)</span>   <span class="token comment" spellcheck="true">!定义一维数组name大小为num</span>
+ <span class="token keyword">deallocate</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span>   <span class="token comment" spellcheck="true">!释放一维数组name的内存空间，以便可以重新设置其大小</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<blockquote>
+<ul>
+<li>size必须使用整型常数   </li>
+<li>fortran最多可以定义7维数组   </li>
+<li>数组保存方式为优先连续保存低维（column major），size1为第一维，size2为第二维，依次类推，高维元素之间在内存中保存距离很远，数组元素的维度越高读取速度越慢   </li>
+</ul>
+</blockquote>
+</li>
+<li><p>数组赋初始值   </p>
+<pre class="line-numbers language-fortran"><code class="language-fortran"> <span class="token keyword">integer</span> a<span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span>
+ <span class="token keyword">data</span> a <span class="token operator">/</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token operator">/</span>   <span class="token comment" spellcheck="true">!常规使用data赋初值</span>
+ <span class="token keyword">data</span> a <span class="token operator">/</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token operator">*</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token operator">/</span>   <span class="token comment" spellcheck="true">!*表示数据重复</span>
+
+ <span class="token keyword">integer</span> b<span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">)</span>   
+ <span class="token keyword">data</span><span class="token punctuation">(</span><span class="token punctuation">(</span>b<span class="token punctuation">(</span>i<span class="token punctuation">,</span>j<span class="token punctuation">)</span><span class="token punctuation">,</span>i<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">10</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">,</span>j<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">10</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span>   <span class="token comment" spellcheck="true">!二维数组的隐循环赋初值</span>
+
+ <span class="token keyword">integer</span> <span class="token operator">::</span> c<span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token operator">=</span><span class="token number">5</span>   <span class="token comment" spellcheck="true">!声明中直接赋值所有元素等于5（fortran90写法）</span>
+ <span class="token keyword">integer</span> <span class="token operator">::</span> c<span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token operator">=</span><span class="token punctuation">(/</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">/)</span>   <span class="token comment" spellcheck="true">!声明中直接赋初值（fortran90写法）</span>
+ <span class="token keyword">integer</span> <span class="token operator">::</span> c<span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token operator">=</span><span class="token punctuation">(/</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token punctuation">(</span>i<span class="token punctuation">,</span>i<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">/)</span>   <span class="token comment" spellcheck="true">!声明中直接用隐循环赋初值（fortran90写法）</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+<li><p>对整个数组操作（fortran90语法）   </p>
+<pre class="line-numbers language-fortran"><code class="language-fortran"> <span class="token keyword">integer</span> a<span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">,</span>b<span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">,</span>c<span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span>   <span class="token comment" spellcheck="true">!a，b，c可以是任意维度但大小相同的数组</span>
+
+ a<span class="token operator">=</span><span class="token number">5</span>   <span class="token comment" spellcheck="true">!设置a中每个元素均为5</span>
+ a<span class="token operator">=</span><span class="token punctuation">(/</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">/)</span>   <span class="token comment" spellcheck="true">!程序中给a赋值</span>
+ a<span class="token operator">=</span>b   <span class="token comment" spellcheck="true">!a与b对应元素相等</span>
+ a<span class="token operator">=</span>b<span class="token operator">+</span>c   <span class="token comment" spellcheck="true">!a等于b与c的对应元素相加</span>
+ a<span class="token operator">=</span>b<span class="token operator">-</span>c   <span class="token comment" spellcheck="true">!a等于b与c的对应元素相减</span>
+ a<span class="token operator">=</span>b<span class="token operator">*</span>c   <span class="token comment" spellcheck="true">!a等于b与c的对应元素相乘（不是矩阵相乘）</span>
+ a<span class="token operator">=</span>b<span class="token operator">/</span>c   <span class="token comment" spellcheck="true">!a等于b与c的对应元素相除</span>
+ a<span class="token operator">=</span>sin<span class="token punctuation">(</span>b<span class="token punctuation">)</span>   <span class="token comment" spellcheck="true">!a等于b的对应元素取sin</span>
+ a<span class="token operator">=</span>b<span class="token operator">></span>c   <span class="token comment" spellcheck="true">!a为逻辑类型数组，等于b与c的对应元素做逻辑判断的结果</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+<li><p>对部分数组操作（fortran90语法）   </p>
+<pre class="line-numbers language-fortran"><code class="language-fortran"> <span class="token keyword">integer</span> a<span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">,</span>b<span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">)</span>   <span class="token comment" spellcheck="true">!a，b，c可以是任意维度的数组</span>
+
+ a<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">:</span><span class="token number">5</span><span class="token punctuation">:</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">=</span><span class="token number">5</span>   <span class="token comment" spellcheck="true">!设置a中第三到第五的元素均为5，步长1可省略</span>
+ a<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">:</span><span class="token punctuation">)</span><span class="token operator">=</span><span class="token number">5</span>   <span class="token comment" spellcheck="true">!设置a中第三个元素及其以后的元素均为5</span>
+ a<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">:</span><span class="token number">5</span><span class="token punctuation">:</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">=</span><span class="token punctuation">(/</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">/)</span>   <span class="token comment" spellcheck="true">!设置a中第三到第五的元素为3，4，5，步长1可省略</span>
+ a<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">:</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token operator">=</span>b<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">:</span><span class="token number">5</span><span class="token punctuation">)</span>   <span class="token comment" spellcheck="true">!设置a中第一到第三的元素与b中第三到第五的元素对应相等</span>
+ a<span class="token punctuation">(</span><span class="token punctuation">:</span><span class="token punctuation">)</span><span class="token operator">=</span>b<span class="token punctuation">(</span><span class="token punctuation">:</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">)</span>   <span class="token comment" spellcheck="true">!设置a中所有元素与b中第三列的所有元素对应相等，多维数组同理  </span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<blockquote>
+<ul>
+<li>对部分数组操作时，等号两边的元素数目必须一样   </li>
+<li>使用隐循环时，可以把低维的循环想象成是内循环   </li>
+</ul>
+</blockquote>
+</li>
+<li><p>WHERE语句（fortran90语法）   </p>
+<pre class="line-numbers language-fortran"><code class="language-fortran"> <span class="token keyword">integer</span> a<span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">,</span>b<span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span>   <span class="token comment" spellcheck="true">!a，b可以是任意维度但大小相同的数组</span>
+
+ <span class="token keyword">where</span><span class="token punctuation">(</span>a<span class="token operator">&lt;</span><span class="token number">2</span><span class="token punctuation">)</span>   <span class="token comment" spellcheck="true">!对数组a的元素做逻辑判断</span>
+     b<span class="token operator">=</span><span class="token number">1</span>   <span class="token comment" spellcheck="true">!对所有a&lt;2的元素，把b中对应的元素设为1</span>
+ <span class="token keyword">elsewhere</span><span class="token punctuation">(</span>a<span class="token operator">></span><span class="token number">5</span><span class="token punctuation">)</span>
+     b<span class="token operator">=</span>a   <span class="token comment" spellcheck="true">!对所有a>5的元素，把b中对应的元素设为与a中对应元素相等</span>
+ <span class="token keyword">elsewhere</span>
+     b<span class="token operator">=</span><span class="token number">3</span>   <span class="token comment" spellcheck="true">!对所有其他情况，把b中剩余元素设为3</span>
+ <span class="token keyword">end where</span>
+
+ <span class="token keyword">where</span><span class="token punctuation">(</span>a<span class="token operator">&lt;</span><span class="token number">3</span><span class="token punctuation">)</span> b<span class="token operator">=</span>a   <span class="token comment" spellcheck="true">!只有一条语句时的简单写法，类似if语句</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<blockquote>
+<ul>
+<li>where可以嵌套，可以署名   </li>
+<li>where只能处理和数组设置相关的程序代码   </li>
+<li>where的整个程序模块中，所有出现的数组必须大小一致      </li>
+</ul>
+</blockquote>
+</li>
+<li><p>FORALL语句（fortran90语法）   </p>
+<pre class="line-numbers language-fortran"><code class="language-fortran"> <span class="token keyword">integer</span> a<span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">,</span>b<span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span>   <span class="token comment" spellcheck="true">!a，b可以是任意维度及大小的数组</span>
+
+ <span class="token keyword">forall</span><span class="token punctuation">(</span>i<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">:</span><span class="token number">10</span><span class="token punctuation">:</span><span class="token number">2</span><span class="token punctuation">,</span>j<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">:</span><span class="token number">5</span><span class="token punctuation">,</span>a<span class="token punctuation">(</span>i<span class="token punctuation">,</span>j<span class="token punctuation">)</span><span class="token operator">&lt;</span><span class="token number">10</span> <span class="token operator">.and.</span> a<span class="token punctuation">(</span>i<span class="token punctuation">,</span>j<span class="token punctuation">)</span><span class="token operator">></span><span class="token number">5</span><span class="token punctuation">)</span>   <span class="token comment" spellcheck="true">!对数组a中符合条件的元素做循环，条件可省</span>
+     a<span class="token punctuation">(</span>i<span class="token punctuation">,</span>j<span class="token punctuation">)</span><span class="token operator">=</span><span class="token number">1</span>   <span class="token comment" spellcheck="true">!对所有符合条件的a的元素，设置其值为1</span>
+ <span class="token keyword">end forall</span>
+
+ <span class="token keyword">forall</span><span class="token punctuation">(</span>i<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">:</span><span class="token number">5</span><span class="token punctuation">,</span>b<span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token operator">&lt;</span><span class="token number">3</span><span class="token punctuation">)</span> b<span class="token operator">=</span><span class="token number">9</span>   <span class="token comment" spellcheck="true">!只有一条语句时的简单写法，类似if语句</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<blockquote>
+<ul>
+<li>forall可以只对部分数组元素做循环   </li>
+<li>forall可以嵌套   </li>
+<li>forall可以嵌套where，但where不能嵌套forall</li>
+<li>where只能处理和数组设置相关的程序代码    </li>
+</ul>
+</blockquote>
+</li>
+</ol>
 
             </div>
             <hr/>
@@ -1104,7 +1229,7 @@ mkfs.ntfs /dev/sdb1 -I (
             <br>
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">8.4k</span>&nbsp;字
+                class="white-color">9.6k</span>&nbsp;字
             
             
             
