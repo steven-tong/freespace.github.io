@@ -14,7 +14,7 @@
     
   </author>
   
-  <generator uri="http://hexo.io/">Hexo</generator>
+  <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
     <title>Linux下制作系统启动盘</title>
@@ -530,6 +530,34 @@ vim ~/.vimrc.bundles
     <id>https://steven-tong.github.io/2019/09/12/abaqus-ji-ben-ming-ling/</id>
     <published>2019-09-12T11:38:05.000Z</published>
     <updated>2019-09-14T13:41:33.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;命令行运行Abaqus&quot;&gt;&lt;a href=&quot;#命令行运行Abaqus&quot; class=&quot;headerlink&quot; title=&quot;命令行运行Abaqus&quot;&gt;&lt;/a&gt;命令行运行Abaqus&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;abq6132 j=Job-1
+        
+      
+    
+    </summary>
+    
+    
+      <category term="ABAQUS" scheme="https://steven-tong.github.io/categories/ABAQUS/"/>
+    
+    
+      <category term="ABAQUS" scheme="https://steven-tong.github.io/tags/ABAQUS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ABAQUS基本 (持续更新）</title>
+    <link href="https://steven-tong.github.io/2019/09/12/abaqus-ji-ben/"/>
+    <id>https://steven-tong.github.io/2019/09/12/abaqus-ji-ben/</id>
+    <published>2019-09-12T11:38:05.000Z</published>
+    <updated>2020-09-09T14:05:53.386Z</updated>
     
     <summary type="html">
     

@@ -468,6 +468,31 @@
     </entry>
     
     
+    
+    <entry>
+      <title>ABAQUS基本 (持续更新）</title>
+      <link href="/2019/09/12/abaqus-ji-ben/"/>
+      <url>/2019/09/12/abaqus-ji-ben/</url>
+      
+        <content type="html"><![CDATA[<h1 id="命令行运行Abaqus"><a href="#命令行运行Abaqus" class="headerlink" title="命令行运行Abaqus"></a>命令行运行Abaqus</h1><ul><li><code>abq6132 j=Job-1 user=vumat.for int</code>   </li><li>Needs Intel parallel studio &amp; Visual Studio 2010</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> ABAQUS </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> ABAQUS </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
   
   
 </search>
